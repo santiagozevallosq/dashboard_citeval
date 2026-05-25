@@ -1,0 +1,4187 @@
+{
+    "kpis": {
+        "total_informes": 42,
+        "conforme": 33,
+        "observado": 6,
+        "falta_informacion": 3,
+        "conformidad_rate": 78.6,
+        "total_unidades_productivas": 1130,
+        "total_cites": 11
+    },
+    "leaderboard": [
+        {
+            "cite": "CITEpesquero Ilo",
+            "total": 13,
+            "conforme": 13,
+            "observado": 0,
+            "falta_info": 0,
+            "conforme_rate": 100.0
+        },
+        {
+            "cite": "CITEcuero y Calzado Lima",
+            "total": 9,
+            "conforme": 9,
+            "observado": 0,
+            "falta_info": 0,
+            "conforme_rate": 100.0
+        },
+        {
+            "cite": "CITEagroindustrial Ica",
+            "total": 1,
+            "conforme": 1,
+            "observado": 0,
+            "falta_info": 0,
+            "conforme_rate": 100.0
+        },
+        {
+            "cite": "CITEcuero y Calzado Arequipa",
+            "total": 4,
+            "conforme": 3,
+            "observado": 1,
+            "falta_info": 0,
+            "conforme_rate": 75.0
+        },
+        {
+            "cite": "CITEcuero y Calzado Trujillo",
+            "total": 4,
+            "conforme": 3,
+            "observado": 1,
+            "falta_info": 0,
+            "conforme_rate": 75.0
+        },
+        {
+            "cite": "CITEagroindustrial Huallaga",
+            "total": 3,
+            "conforme": 2,
+            "observado": 1,
+            "falta_info": 0,
+            "conforme_rate": 66.7
+        },
+        {
+            "cite": "CITEmadera y del Mueble",
+            "total": 2,
+            "conforme": 1,
+            "observado": 1,
+            "falta_info": 0,
+            "conforme_rate": 50.0
+        },
+        {
+            "cite": "CITEagroindustrial Oxapampa",
+            "total": 3,
+            "conforme": 1,
+            "observado": 2,
+            "falta_info": 0,
+            "conforme_rate": 33.3
+        },
+        {
+            "cite": "CITEproductivo San Martín",
+            "total": 1,
+            "conforme": 0,
+            "observado": 0,
+            "falta_info": 1,
+            "conforme_rate": 0.0
+        },
+        {
+            "cite": "CITEtextil Camélidos Huancavelica",
+            "total": 1,
+            "conforme": 0,
+            "observado": 0,
+            "falta_info": 1,
+            "conforme_rate": 0.0
+        },
+        {
+            "cite": "CITEtextil Camélidos Puno",
+            "total": 1,
+            "conforme": 0,
+            "observado": 0,
+            "falta_info": 1,
+            "conforme_rate": 0.0
+        }
+    ],
+    "frecuencia_errores": [
+        {
+            "criterio": "Evidencia de convocatoria",
+            "cantidad": 5
+        },
+        {
+            "criterio": "Temario",
+            "cantidad": 2
+        },
+        {
+            "criterio": "Evaluación de entrada/salida",
+            "cantidad": 2
+        },
+        {
+            "criterio": "Lista de asistentes por día",
+            "cantidad": 2
+        },
+        {
+            "criterio": "Relación participantes - unidades productivas",
+            "cantidad": 1
+        }
+    ],
+    "informes": [
+        {
+            "cod_informe": "cite03_serv05_001",
+            "cite_ut": "CITEagroindustrial Huallaga",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "04/07/2026",
+            "fecha_fin": "04/08/2026",
+            "unidades_productivas_count": 33,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20513818662",
+                    "razon_social": "PRODUCTOS Y SERVICIOS SOL DE ORO E.I.R.L."
+                },
+                {
+                    "ruc": "10230133897",
+                    "razon_social": "MERA VALLES VICTOR HUGO"
+                },
+                {
+                    "ruc": "20612162418",
+                    "razon_social": "PRODUCTORA ACUICOLA TARAPOTO S.A.C."
+                },
+                {
+                    "ruc": "20610269886",
+                    "razon_social": "WAYTA CAFE S.R.L."
+                },
+                {
+                    "ruc": "20611442841",
+                    "razon_social": "EMAVI E.I.R.L"
+                },
+                {
+                    "ruc": "20601011175",
+                    "razon_social": "SUCRÉ SALÉ S.A.C."
+                },
+                {
+                    "ruc": "20600335121",
+                    "razon_social": "NATURE E.I.R.L"
+                },
+                {
+                    "ruc": "20611754737",
+                    "razon_social": "CAFÉ & CACAO KUSKA S.A."
+                },
+                {
+                    "ruc": "10471040369",
+                    "razon_social": "SANTISTEBAN CHUMACERO KATHERINE NOEMI"
+                },
+                {
+                    "ruc": "20557053213",
+                    "razon_social": "EKO BUSINESS S.A.C."
+                },
+                {
+                    "ruc": "10406920947",
+                    "razon_social": "NEYRA  RAYDA SILVIA"
+                },
+                {
+                    "ruc": "10464718732",
+                    "razon_social": "GARCIA HUAMAN JOSE ALFREDO"
+                },
+                {
+                    "ruc": "20568760736",
+                    "razon_social": "ALLIN CAUSAI E.I.R.L."
+                },
+                {
+                    "ruc": "20600247361",
+                    "razon_social": "ESKALA 360 S.A.C."
+                },
+                {
+                    "ruc": "10200636487",
+                    "razon_social": "LOPEZ SUAREZ LIDA OTILIA"
+                },
+                {
+                    "ruc": "20610567682",
+                    "razon_social": "EMPRESA DE BIENES Y SERVICIOS JAK EIRL"
+                },
+                {
+                    "ruc": "20600471768",
+                    "razon_social": "ASOCIACION AGROINDUSTRIAL GROUP SKAAP"
+                },
+                {
+                    "ruc": "10448246596",
+                    "razon_social": "LLIUYACC LLANCARI MERIMEE JHULISA"
+                },
+                {
+                    "ruc": "20600902793",
+                    "razon_social": "COOPERATIVA AGRARIA DE CACAOTEROS DE CODO DEL POZUZO"
+                },
+                {
+                    "ruc": "20603092873",
+                    "razon_social": "AGRO INDUSTRIAS PUMA REAL S.R.L."
+                },
+                {
+                    "ruc": "20604956201",
+                    "razon_social": "COOPERATIVA AGRARIA DE PRODUCTORES ORGANICOS DEL VALLE DE SECHURA-CAPOVAS"
+                },
+                {
+                    "ruc": "20605934201",
+                    "razon_social": "FINCA YANAMAYO S.R.L."
+                },
+                {
+                    "ruc": "20605233962",
+                    "razon_social": "COMPANY DE SOLUCIONES INTEGRALES R Y G S.A.C."
+                },
+                {
+                    "ruc": "20600419367",
+                    "razon_social": "BUSINESS INNOVATIONS S.A.C."
+                },
+                {
+                    "ruc": "20614049317",
+                    "razon_social": "AGROINDUSTRIAS BELIC INNOVACION S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite03_serv05_002",
+            "cite_ut": "CITEagroindustrial Huallaga",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Huánuco",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 23,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20611696885",
+                    "razon_social": "DON RICARDO ORGANICO E.I.R.L."
+                },
+                {
+                    "ruc": "10429297015",
+                    "razon_social": "ÑAHUI CCENCHO LIBIA ARGELIA"
+                },
+                {
+                    "ruc": "10465231098",
+                    "razon_social": "FERNANDEZ SANCHEZ ENZO JOEL FERNANDO"
+                },
+                {
+                    "ruc": "20573910657",
+                    "razon_social": "ASOCIACION DE PRODUCTORES Y SERVICIOS AGROPECUARIOS AYNI VRAEM"
+                },
+                {
+                    "ruc": "20601153191",
+                    "razon_social": "SOS INFRAESTRUCTURA E.I.R.L."
+                },
+                {
+                    "ruc": "20608495887",
+                    "razon_social": "COFFEE SHOP 20/20 E.I.R.L"
+                },
+                {
+                    "ruc": "20603814151",
+                    "razon_social": "INVERSIONES CRECE MASS S.R.L."
+                },
+                {
+                    "ruc": "20551556825",
+                    "razon_social": "LAFORE E.I.R.L."
+                },
+                {
+                    "ruc": "20608994743",
+                    "razon_social": "SARE AMAZONIA PERU SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20605117865",
+                    "razon_social": "AGROINDUSTRIAS E INGENIEROS ANTONIO S.R.L."
+                },
+                {
+                    "ruc": "20605600485",
+                    "razon_social": "COOPERATIVA AGRARIA COLINAS DEL SANTUARIO"
+                },
+                {
+                    "ruc": "10413380001",
+                    "razon_social": "MARTINEZ HUAROC ARTURO"
+                },
+                {
+                    "ruc": "20613914154",
+                    "razon_social": "PRODUCTOS Y SERVICIOS AGROINDUSTRIALES TAMARA S.A.C."
+                },
+                {
+                    "ruc": "10101113332",
+                    "razon_social": "AYALA MURGA ARTEMIO EUSEBIO"
+                },
+                {
+                    "ruc": "10040746108",
+                    "razon_social": "HUERTA FIGUEROA MADELEINE SOFIA"
+                },
+                {
+                    "ruc": "20613379356",
+                    "razon_social": "AGRIBUSINESS CONSULTING GROUP S.A.C."
+                },
+                {
+                    "ruc": "20614676907",
+                    "razon_social": "VIDA EN AMAZONIA S.A.C."
+                },
+                {
+                    "ruc": "10439912877",
+                    "razon_social": "VILLANUEVA MUÑOZ FLOR DE MARIA"
+                },
+                {
+                    "ruc": "20604123373",
+                    "razon_social": "COOPERATIVA AGRARIA COFFEE GRAM PERÚ"
+                },
+                {
+                    "ruc": "20603883692",
+                    "razon_social": "INDUSTRIAS FAMA DISTRIBUCION Y TRANSPORTE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20491717140",
+                    "razon_social": "ZINGA PERU EIRL"
+                },
+                {
+                    "ruc": "20608470621",
+                    "razon_social": "LA ASOCIACION DE PRODUCTORES AGROPECUARIOS CHOGOPILLO"
+                },
+                {
+                    "ruc": "20604106380",
+                    "razon_social": "GLOBAL CONSULTING KIEV E.I.R.L."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite03_serv05_003",
+            "cite_ut": "CITEagroindustrial Huallaga",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "ÁÁncash",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 57,
+            "observaciones_raw": "[Evidencia de convocatoria]: Se menciona el 'Flyer' pero no se adjunta ni se describe su contenido como evidencia de convocatoria.",
+            "criterios": [
+                {
+                    "criterio": "Evidencia de convocatoria",
+                    "detalle": "Se menciona el 'Flyer' pero no se adjunta ni se describe su contenido como evidencia de convocatoria.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20613872249",
+                    "razon_social": "INTIKILLA G & B S.A.C."
+                },
+                {
+                    "ruc": "20481074437",
+                    "razon_social": "SERVICIOS GENERALES SMITH EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20602736254",
+                    "razon_social": "C & V INTEGRAL SOLUTION S.A.C."
+                },
+                {
+                    "ruc": "20605188975",
+                    "razon_social": "ASOCIACIÓN DE MARICULTORES &quot;EL REY&quot; - SECHURA"
+                },
+                {
+                    "ruc": "20610236821",
+                    "razon_social": "ATENEAS WARRIORS S.A.C."
+                },
+                {
+                    "ruc": "20606672811",
+                    "razon_social": "CONSULTING AND TRAINING MABI S.A.C."
+                },
+                {
+                    "ruc": "20615348954",
+                    "razon_social": "INDUSTRIAS MOYOCIX S.A.C."
+                },
+                {
+                    "ruc": "10266897290",
+                    "razon_social": "PIZAN MENDOZA EDGAR TITO"
+                },
+                {
+                    "ruc": "20610467629",
+                    "razon_social": "GRUPO EMPRESARIAL SANCOR SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20608439863",
+                    "razon_social": "PACHA TRIP PERU SERVICIOS TURISTICOS S.A.C."
+                },
+                {
+                    "ruc": "20392770187",
+                    "razon_social": "INGEO SOLUCIONES GEOGRAFICAS S.A.C."
+                },
+                {
+                    "ruc": "20602961509",
+                    "razon_social": "AVC CORPORATION S.A.C."
+                },
+                {
+                    "ruc": "20607720275",
+                    "razon_social": "WIÑAYPAQ YANAPASUN KAWSAYTA"
+                },
+                {
+                    "ruc": "10421297741",
+                    "razon_social": "SARMIENTO CHOQUE GUIDO YONY"
+                },
+                {
+                    "ruc": "20611287373",
+                    "razon_social": "DISMART AMAZON CARBON S.A.C"
+                },
+                {
+                    "ruc": "20610853081",
+                    "razon_social": "CRECER AMAZONICO CONSULTORA SAC"
+                },
+                {
+                    "ruc": "20606223553",
+                    "razon_social": "NOAS E.I.R.L"
+                },
+                {
+                    "ruc": "20601277256",
+                    "razon_social": "SERVICIOS GENERALES Y MAQUINARIAS ATLAS E.I.R.L. - SERGEMAQ E.I.R.L."
+                },
+                {
+                    "ruc": "10472964360",
+                    "razon_social": "MONTES TORO FREDDY EDUARDO"
+                },
+                {
+                    "ruc": "20612498688",
+                    "razon_social": "MAWCREEN MADERERA WOLD GREEN TACSA S.R.L"
+                },
+                {
+                    "ruc": "20612923028",
+                    "razon_social": "SOCIEDAD FUNDO MINASANI DE PRODUCTORES DE CAMELIDOS CUSCO - SOFUNMI-PROCAC"
+                },
+                {
+                    "ruc": "20615671771",
+                    "razon_social": "ASG MULTISERVICIOS S.A.C."
+                },
+                {
+                    "ruc": "10457872360",
+                    "razon_social": "AGUACONDO FERNANDEZ JUAN CARLOS MIGUEL"
+                },
+                {
+                    "ruc": "20530060277",
+                    "razon_social": "NEGOCIOS Y SERVICIOS FIRS E.I.R.L."
+                },
+                {
+                    "ruc": "20610739505",
+                    "razon_social": "COOPERATIVA AGRARIA HUAYHUASH"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite04_serv05_001",
+            "cite_ut": "CITEagroindustrial Ica",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 6.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 12,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20604721637",
+                    "razon_social": "PERUVIAN NATURAL S.A.C."
+                },
+                {
+                    "ruc": "20605605827",
+                    "razon_social": "AMAZON PLANET GREEN S.A.C."
+                },
+                {
+                    "ruc": "20602441301",
+                    "razon_social": "VITIVINICOLA VIÑA DON NICO S.A.C."
+                },
+                {
+                    "ruc": "10214967397",
+                    "razon_social": "QUISPE LOVERA CARLOS ALBERTO"
+                },
+                {
+                    "ruc": "10761196133",
+                    "razon_social": "CANDELA RAMOS DIEGO FERNANDO"
+                },
+                {
+                    "ruc": "75893803",
+                    "razon_social": "TIPISMANA ROJAS CINTHYA DEL PILAR"
+                },
+                {
+                    "ruc": "20605048740",
+                    "razon_social": "DELTA CORP PERU SOCIEDAD ANONIMA CERRADA - DELTA CORP PERU S.A.C."
+                },
+                {
+                    "ruc": "10215541296",
+                    "razon_social": "HIDALGO GARATE DELMIR JUAN CARLOS"
+                },
+                {
+                    "ruc": "10214511156",
+                    "razon_social": "ORELLANA QUIJANDRIA ENA MARIA"
+                },
+                {
+                    "ruc": "20601556511",
+                    "razon_social": "VITIVINICOLA NYRLA LEVANO E.I.R.L."
+                },
+                {
+                    "ruc": "20452733341",
+                    "razon_social": "AGROINDUSTRIAS TRES GENERACIONES SAC"
+                },
+                {
+                    "ruc": "20494581931",
+                    "razon_social": "BODEGA FALCONI S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite07_serv05_004",
+            "cite_ut": "CITEagroindustrial Oxapampa",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "Pasco",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 15,
+            "observaciones_raw": "[Temario]: El informe no incluye el temario del curso ni un enlace directo o referencia clara a la ubicación del mismo. | [Evidencia de convocatoria]: No se observa ninguna evidencia de convocatoria digital o física que demuestre la difusión del evento. | [Evaluación de entrada/salida]: Solo se reporta una encuesta de satisfacción, no pruebas de conocimiento de entrada y salida.",
+            "criterios": [
+                {
+                    "criterio": "Temario",
+                    "detalle": "El informe no incluye el temario del curso ni un enlace directo o referencia clara a la ubicación del mismo.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Evidencia de convocatoria",
+                    "detalle": "No se observa ninguna evidencia de convocatoria digital o física que demuestre la difusión del evento.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Evaluación de entrada/salida",
+                    "detalle": "Solo se reporta una encuesta de satisfacción, no pruebas de conocimiento de entrada y salida.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10043042519",
+                    "razon_social": "TRAVI ÑAURIMA EDGARDO REINALDO"
+                },
+                {
+                    "ruc": "10043054797",
+                    "razon_social": "COTRINA CASAS IDEL LUIS"
+                },
+                {
+                    "ruc": "10408859234",
+                    "razon_social": "SINCHE RODRIGUEZ MANUEL TITO"
+                },
+                {
+                    "ruc": "10418157688",
+                    "razon_social": "VIVANCO VEGA ENZO ENRIQUE"
+                },
+                {
+                    "ruc": "20614224305",
+                    "razon_social": "CORPORACION IBDA C&R AGROINDUSTRIAL SOCIEDAD ANÓNIMA CERRADA"
+                },
+                {
+                    "ruc": "10425610185",
+                    "razon_social": "COTRINA SINCHE SLIFF RAYMMI"
+                },
+                {
+                    "ruc": "20613887017",
+                    "razon_social": "VRCOFFEE S.A.C."
+                },
+                {
+                    "ruc": "10437026845",
+                    "razon_social": "JORGE GUERRA MADELAINE DEBBIE"
+                },
+                {
+                    "ruc": "20612462616",
+                    "razon_social": "ASOCIACION AGRARIA DE MUJERES EMPRENDEDORAS DE VILLA RICA"
+                },
+                {
+                    "ruc": "10804277451",
+                    "razon_social": "MARIN CIRIACO GINO SADLER"
+                },
+                {
+                    "ruc": "20611696885",
+                    "razon_social": "DON RICARDO ORGANICO E.I.R.L."
+                },
+                {
+                    "ruc": "20611229764",
+                    "razon_social": "THE SUNRISE S.R.L."
+                },
+                {
+                    "ruc": "20551798161",
+                    "razon_social": "CITRUS VENDING S.A.C."
+                },
+                {
+                    "ruc": "20602282598",
+                    "razon_social": "CONSTRUCTORA Y CONSULTORA EN INGENIERIA OXAPAMPA CINGEOXA SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20568412371",
+                    "razon_social": "MOUNTAIN INGENIERÍA SOSTENIBLE SOCIEDAD ANÓNIMA CERRADA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite07_serv05_007",
+            "cite_ut": "CITEagroindustrial Oxapampa",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "Huánuco",
+            "horas_efect": 6.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "04/01/2026",
+            "unidades_productivas_count": 111,
+            "observaciones_raw": "[Temario]: Se menciona que se cumplió el objetivo del curso conforme al Programa establecido, pero el programa en sí no está adjunto ni detallado en el informe. | [Evidencia de convocatoria]: El informe no incluye ninguna prueba de convocatoria del servicio de capacitación. | [Evaluación de entrada/salida]: La encuesta de satisfacción no es equivalente a una evaluación de entrada/salida de conocimientos.",
+            "criterios": [
+                {
+                    "criterio": "Temario",
+                    "detalle": "Se menciona que se cumplió el objetivo del curso conforme al Programa establecido, pero el programa en sí no está adjunto ni detallado en el informe.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Evidencia de convocatoria",
+                    "detalle": "El informe no incluye ninguna prueba de convocatoria del servicio de capacitación.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Evaluación de entrada/salida",
+                    "detalle": "La encuesta de satisfacción no es equivalente a una evaluación de entrada/salida de conocimientos.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20601654602",
+                    "razon_social": "AGROINDUSTRIAS ROCALU SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20603183623",
+                    "razon_social": "COOPERATIVA AGRARIA AMAZONICA DE CONSERVACION VOLUNTARIA Y COMUNAL"
+                },
+                {
+                    "ruc": "20603817185",
+                    "razon_social": "DESARROLLO EDUCATIVO S.A."
+                },
+                {
+                    "ruc": "20604295131",
+                    "razon_social": "CITROSWEET MILLS S.A.C."
+                },
+                {
+                    "ruc": "20604698970",
+                    "razon_social": "A-1 DEL PERU MULTINDUSTRIAS SOCIEDAD ANONIMA CERRADA - A-1 DEL PERU MULTINDUSTRIAS S.A.C."
+                },
+                {
+                    "ruc": "20605388991",
+                    "razon_social": "SUPERAZUCAR DEL PERU S.A.C. - SADP S.A.C."
+                },
+                {
+                    "ruc": "20605605827",
+                    "razon_social": "AMAZON PLANET GREEN S.A.C."
+                },
+                {
+                    "ruc": "20605778870",
+                    "razon_social": "CORPORACION DE COMERCIO INDUSTRIAL SANTA ANGELA S.A.C."
+                },
+                {
+                    "ruc": "20605934201",
+                    "razon_social": "FINCA YANAMAYO S.R.L."
+                },
+                {
+                    "ruc": "20606185597",
+                    "razon_social": "YQ INDUSTRIAS ALIMENTARIAS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20606408162",
+                    "razon_social": "IMPORT EXPORT ESLUDA E.I.R.L."
+                },
+                {
+                    "ruc": "20606564334",
+                    "razon_social": "ZARRI E.I.R.L."
+                },
+                {
+                    "ruc": "20607112259",
+                    "razon_social": "BIOSUMAQ S.A.C."
+                },
+                {
+                    "ruc": "20607157813",
+                    "razon_social": "AGROINDUSTRIAS SAGRADA FAMILIA S.R.L."
+                },
+                {
+                    "ruc": "20607640760",
+                    "razon_social": "GRUPO HENSIL S.A.C."
+                },
+                {
+                    "ruc": "20607811432",
+                    "razon_social": "FUNDO AGUIRRE E.I.R.L."
+                },
+                {
+                    "ruc": "20608051962",
+                    "razon_social": "TRAVISA CARGO LOGISTICS S.A.C."
+                },
+                {
+                    "ruc": "20608649515",
+                    "razon_social": "GEEB TECHNOLOGY E.I.R.L"
+                },
+                {
+                    "ruc": "20608655833",
+                    "razon_social": "FERREMASS PUCALLPA S.A."
+                },
+                {
+                    "ruc": "20609035154",
+                    "razon_social": "AZZAGGIO S.A.C."
+                },
+                {
+                    "ruc": "20610045082",
+                    "razon_social": "ALLPAGRI S.A.C."
+                },
+                {
+                    "ruc": "20610201751",
+                    "razon_social": "GRUPO CALICHA SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20610466517",
+                    "razon_social": "SOLUCIONES INDUSTRIALES ELECTROMAQUINAS PERU S.A.C."
+                },
+                {
+                    "ruc": "20611187026",
+                    "razon_social": "AGROINDUSTRIA AYNI DE LOS ANDES S.A.C."
+                },
+                {
+                    "ruc": "20611542721",
+                    "razon_social": "GRUPO BIOTECH S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite07_serv07_001",
+            "cite_ut": "CITEagroindustrial Oxapampa",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Junín",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Agroindustrial",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 57,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20607157813",
+                    "razon_social": "AGROINDUSTRIAS SAGRADA FAMILIA S.R.L."
+                },
+                {
+                    "ruc": "20607811432",
+                    "razon_social": "FUNDO AGUIRRE E.I.R.L."
+                },
+                {
+                    "ruc": "10707846301",
+                    "razon_social": "BORONDA GARCIA BRADY JANDY"
+                },
+                {
+                    "ruc": "10043491976",
+                    "razon_social": "CARHUA LEON LUISA YOLANDA"
+                },
+                {
+                    "ruc": "20612876780",
+                    "razon_social": "MULLU BIO S.A.C."
+                },
+                {
+                    "ruc": "20610045082",
+                    "razon_social": "ALLPAGRI S.A.C."
+                },
+                {
+                    "ruc": "20608232495",
+                    "razon_social": "ASOCIACION DE PRODUCTORES AGROPECUARIOS CENTRO POBLADO SALACAT"
+                },
+                {
+                    "ruc": "20486229170",
+                    "razon_social": "ASOCIACION PARA EL DESARROLLO INTEGRAL DE LOS GANADEROS Y AGRICULTORES POZUZO"
+                },
+                {
+                    "ruc": "20610562591",
+                    "razon_social": "PROAPI LA CASA DE LA MIEL E.I.R.L."
+                },
+                {
+                    "ruc": "10404163481",
+                    "razon_social": "BAÑOS MEDINA LILIAN"
+                },
+                {
+                    "ruc": "20608655833",
+                    "razon_social": "FERREMASS PUCALLPA S.A."
+                },
+                {
+                    "ruc": "10426395075",
+                    "razon_social": "INGA GARCIA LITMAN URIEL"
+                },
+                {
+                    "ruc": "20568617267",
+                    "razon_social": "LA CAMPIÑA PERU S.A.C."
+                },
+                {
+                    "ruc": "10720448420",
+                    "razon_social": "CAJAS BAZAN BRIGHIT NAYELY"
+                },
+                {
+                    "ruc": "20604546193",
+                    "razon_social": "ECOTOURS POZUZO-PERU E.I.R.L."
+                },
+                {
+                    "ruc": "10712579566",
+                    "razon_social": "CAMPOBLANCO CARHUACHIN RAFAEL JEHOVANI"
+                },
+                {
+                    "ruc": "20608758144",
+                    "razon_social": "EMPRESA DE VIAJES Y TURISMO VIAJANDO CON DIOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20611002247",
+                    "razon_social": "COOPERATIVA AGRARIA DE SERVICIOS ALTO ANDINO NUEVA SANTA VIRGINIA - POZUZO"
+                },
+                {
+                    "ruc": "10409773201",
+                    "razon_social": "CASTILLO TORRES JOSE ELEAZAR"
+                },
+                {
+                    "ruc": "20608833031",
+                    "razon_social": "INVERSIONES Y DISTRIBUCIONES IDAF E.I.R.L."
+                },
+                {
+                    "ruc": "20605388991",
+                    "razon_social": "SUPERAZUCAR DEL PERU S.A.C. - SADP S.A.C."
+                },
+                {
+                    "ruc": "10043209995",
+                    "razon_social": "ESPINOZA AYALA SAUL WALTER"
+                },
+                {
+                    "ruc": "10462065936",
+                    "razon_social": "CORI FALCON JOHN FERNANDO"
+                },
+                {
+                    "ruc": "20611364432",
+                    "razon_social": "PACHECO LABORATORIO COFFEE S.A.C.S."
+                },
+                {
+                    "ruc": "10098677921",
+                    "razon_social": "ESCALANTE CHAVEZ WILSON TEODORO"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv05_001",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 6.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 50,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20543627063",
+                    "razon_social": "DSG INTERIOR S.A.C."
+                },
+                {
+                    "ruc": "10448074701",
+                    "razon_social": "GONZALES GASPAR FLOR DE MARIA ROCIO"
+                },
+                {
+                    "ruc": "10426846557",
+                    "razon_social": "VEREAU CORDERO ROBINSON PAUL"
+                },
+                {
+                    "ruc": "10296939736",
+                    "razon_social": "SEVIN CCOLQQUE DELFIN GREGORIO"
+                },
+                {
+                    "ruc": "10751324061",
+                    "razon_social": "SILVA VARGAS CESAR JOSE LUIS"
+                },
+                {
+                    "ruc": "10417054630",
+                    "razon_social": "CUMPA ASLLA WILDON"
+                },
+                {
+                    "ruc": "10092736615",
+                    "razon_social": "ROJAS ESPINOZA FLAVIO FIDEL"
+                },
+                {
+                    "ruc": "10227512208",
+                    "razon_social": "RIOS CANO JOAQUIN PELE"
+                },
+                {
+                    "ruc": "10101060212",
+                    "razon_social": "CARBAJAL CUCHILLO FRANCISCO"
+                },
+                {
+                    "ruc": "20603665393",
+                    "razon_social": "EVA GROUP SOCIEDAD ANÓNIMA CERRADA - EVA GROUP S.A.C."
+                },
+                {
+                    "ruc": "20615015319",
+                    "razon_social": "CORPORACION JHONSTEPS INNOVACION Y CALZADO S.A.C."
+                },
+                {
+                    "ruc": "20608399667",
+                    "razon_social": "CORPORACION EXCUSAS SHOES S.A.C."
+                },
+                {
+                    "ruc": "20612687081",
+                    "razon_social": "INDUSTRIAS FORGODS CASSAL S.A.C."
+                },
+                {
+                    "ruc": "20614876311",
+                    "razon_social": "CORPORACION RIBEIRO E.I.R.L."
+                },
+                {
+                    "ruc": "10103490451",
+                    "razon_social": "JARA HERMENEGILDO CHARLIE TORIBIO"
+                },
+                {
+                    "ruc": "20554152181",
+                    "razon_social": "CONSORCIO INDUSTRIAL ALIMBER EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "10182149026",
+                    "razon_social": "UBILLUS OJEDA KATIA MAGALY"
+                },
+                {
+                    "ruc": "20613859447",
+                    "razon_social": "WALFOOT FACTORY SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20481718423",
+                    "razon_social": "CALZADOS JAGUAR SAC"
+                },
+                {
+                    "ruc": "10473875042",
+                    "razon_social": "PALOMINO PEÑA WILLY ANIBAL"
+                },
+                {
+                    "ruc": "10473381902",
+                    "razon_social": "MELGAREJO FRETEL DORIS MELISSA"
+                },
+                {
+                    "ruc": "10471880413",
+                    "razon_social": "AREDO LECCA HEYSER ABNER"
+                },
+                {
+                    "ruc": "10484261976",
+                    "razon_social": "VILLARROEL CLAROS MICHAEL CRISTHIAN"
+                },
+                {
+                    "ruc": "20608977059",
+                    "razon_social": "INFINITY SHOES E.I.R.L."
+                },
+                {
+                    "ruc": "20543542408",
+                    "razon_social": "TODAI SOCIEDAD ANONIMA CERRADA - TODAI S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv05_002",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 12.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 45,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10424120494",
+                    "razon_social": "SALCEDO ROMAN JHON GHEINER"
+                },
+                {
+                    "ruc": "10467866988",
+                    "razon_social": "PORTA QUINTIMARI CAMILO DANTE"
+                },
+                {
+                    "ruc": "20608399667",
+                    "razon_social": "CORPORACION EXCUSAS SHOES S.A.C."
+                },
+                {
+                    "ruc": "10296580371",
+                    "razon_social": "FERNANDEZ FERNANDEZ ROBERTO JULIO"
+                },
+                {
+                    "ruc": "20606670657",
+                    "razon_social": "3ELEMENTOS S.A.C."
+                },
+                {
+                    "ruc": "20526693320",
+                    "razon_social": "JIRETH JEHOVA ES NUESTRO PROVEEDOR E.I.R.L"
+                },
+                {
+                    "ruc": "10103490451",
+                    "razon_social": "JARA HERMENEGILDO CHARLIE TORIBIO"
+                },
+                {
+                    "ruc": "10419116144",
+                    "razon_social": "MAMANI MAMANI JULIO CESAR"
+                },
+                {
+                    "ruc": "20605811354",
+                    "razon_social": "INDUSTRIAS DEL CALZADO SHULTS EIRL"
+                },
+                {
+                    "ruc": "20602672370",
+                    "razon_social": "CORPORACION CAYARACC S.A.C."
+                },
+                {
+                    "ruc": "10402004971",
+                    "razon_social": "HUARANGA NUÑEZ JUAN ANIBAL"
+                },
+                {
+                    "ruc": "10067400777",
+                    "razon_social": "PORTURAS ARRIOLA JUAN CARLOS"
+                },
+                {
+                    "ruc": "10094359525",
+                    "razon_social": "NAJARRO CASTILLO GONZALO AUGUSTO"
+                },
+                {
+                    "ruc": "10754065996",
+                    "razon_social": "CHAMBILLA PAREDES GIANELLA MILAGROS"
+                },
+                {
+                    "ruc": "10296939736",
+                    "razon_social": "SEVIN CCOLQQUE DELFIN GREGORIO"
+                },
+                {
+                    "ruc": "20568966946",
+                    "razon_social": "INVERSIONES T.Y.Y.C. S.A.C."
+                },
+                {
+                    "ruc": "10419465777",
+                    "razon_social": "MAURTUA BULEJE FERNANDO MANUEL"
+                },
+                {
+                    "ruc": "10472251690",
+                    "razon_social": "EGÜES CUYA BETSABE INES"
+                },
+                {
+                    "ruc": "20608103768",
+                    "razon_social": "INDUSTRIAS ZAVAL S.A.C."
+                },
+                {
+                    "ruc": "10473381902",
+                    "razon_social": "MELGAREJO FRETEL DORIS MELISSA"
+                },
+                {
+                    "ruc": "10410069828",
+                    "razon_social": "OSORIO BOBADILLA IVAN EDUARDO"
+                },
+                {
+                    "ruc": "20481800600",
+                    "razon_social": "INCAL SAFETY S.A.C."
+                },
+                {
+                    "ruc": "10802021009",
+                    "razon_social": "ANCO TEJADA JUAN RAMON"
+                },
+                {
+                    "ruc": "10747808541",
+                    "razon_social": "RIVERA ALARCON IBETH ANGELA"
+                },
+                {
+                    "ruc": "20607585416",
+                    "razon_social": "INDUSTRIA SAVAS S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv05_003",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 35.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 17,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10102249572",
+                    "razon_social": "BAZAN LAVADO SOFIA"
+                },
+                {
+                    "ruc": "20603425970",
+                    "razon_social": "INFORMATICA NACIONAL E.I.R.L."
+                },
+                {
+                    "ruc": "10085233373",
+                    "razon_social": "MOGROVEJO AGUIRRE ROSA NATIVIDAD"
+                },
+                {
+                    "ruc": "20613562321",
+                    "razon_social": "JOMOSO E.I.R.L."
+                },
+                {
+                    "ruc": "10414449820",
+                    "razon_social": "CCOÑAS ROJAS DE MURILLO CARMEN ROSA"
+                },
+                {
+                    "ruc": "10102407402",
+                    "razon_social": "MEZA PEREZ WALTER"
+                },
+                {
+                    "ruc": "10750099632",
+                    "razon_social": "VILCAYAURI AVILA JULIA ESTEFANI"
+                },
+                {
+                    "ruc": "20492079309",
+                    "razon_social": "CONFECCIONES BRAVA SURF E.I.R.L."
+                },
+                {
+                    "ruc": "10080129276",
+                    "razon_social": "DAVIRAN TURIN GLORIA MARIA"
+                },
+                {
+                    "ruc": "10403410662",
+                    "razon_social": "GOMEZ BEJARANO EDITH KAREM"
+                },
+                {
+                    "ruc": "10716184680",
+                    "razon_social": "CARDENAS AQUINO NAHIR CELINA"
+                },
+                {
+                    "ruc": "10447196820",
+                    "razon_social": "CARRASCO RUBIO VIVIANA CAROLINA"
+                },
+                {
+                    "ruc": "10088476731",
+                    "razon_social": "CEPEDA OLIVERA ROSA MIRNA"
+                },
+                {
+                    "ruc": "20603757123",
+                    "razon_social": "JOCARCORP S.A.C."
+                },
+                {
+                    "ruc": "20612335487",
+                    "razon_social": "KALLPA CLOTHING S.A.C."
+                },
+                {
+                    "ruc": "20557167227",
+                    "razon_social": "CORPORACION INJEZA DEL PERU SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "10419465777",
+                    "razon_social": "MAURTUA BULEJE FERNANDO MANUEL"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv05_004",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 22,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20392864327",
+                    "razon_social": "QARA UJUT'A S.A."
+                },
+                {
+                    "ruc": "10085233373",
+                    "razon_social": "MOGROVEJO AGUIRRE ROSA NATIVIDAD"
+                },
+                {
+                    "ruc": "20112565036",
+                    "razon_social": "INDUSTRIAL ZAYMA S.A.C."
+                },
+                {
+                    "ruc": "10733226833",
+                    "razon_social": "CHERO MENDOZA ASTRIHD FERNANDA JERALDINE"
+                },
+                {
+                    "ruc": "10475889946",
+                    "razon_social": "ANTONIO REPUELLO JACQUELIN"
+                },
+                {
+                    "ruc": "20613251945",
+                    "razon_social": "SEÑALES CALZADO S.A.C."
+                },
+                {
+                    "ruc": "20556959031",
+                    "razon_social": "LE CARRE S.A.C."
+                },
+                {
+                    "ruc": "20329985777",
+                    "razon_social": "INDUSTRIA ESTRELLA AZUL E.I.R.L."
+                },
+                {
+                    "ruc": "20608179306",
+                    "razon_social": "CORPORACION INDUSTRIAL FATRI S.A.C"
+                },
+                {
+                    "ruc": "20548926166",
+                    "razon_social": "V & V VELUCCI S.A.C."
+                },
+                {
+                    "ruc": "20612687081",
+                    "razon_social": "INDUSTRIAS FORGODS CASSAL S.A.C."
+                },
+                {
+                    "ruc": "10751324061",
+                    "razon_social": "SILVA VARGAS CESAR JOSE LUIS"
+                },
+                {
+                    "ruc": "20602802788",
+                    "razon_social": "CORPORACION DE CALZADOS VICTOR S.A.C."
+                },
+                {
+                    "ruc": "10801411733",
+                    "razon_social": "BONIFACIO CAMPOSANO HUBERTO"
+                },
+                {
+                    "ruc": "20600610172",
+                    "razon_social": "CUEROS ALEXA S.A.C."
+                },
+                {
+                    "ruc": "20554152181",
+                    "razon_social": "CONSORCIO INDUSTRIAL ALIMBER EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20608493337",
+                    "razon_social": "CALZADOS CLARITA E.I.R.L."
+                },
+                {
+                    "ruc": "10101033266",
+                    "razon_social": "HUAMAN GUTIERREZ EFRAIN"
+                },
+                {
+                    "ruc": "20549397876",
+                    "razon_social": "VICKY & ASOCIADOS S.A.C."
+                },
+                {
+                    "ruc": "10804497281",
+                    "razon_social": "ALAYO ROMAN CARLOS ALBERTO"
+                },
+                {
+                    "ruc": "20611886269",
+                    "razon_social": "INDUSTRIAS MANUFACTURERAS DEL PERU S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv05_005",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Callao",
+            "horas_efect": 35.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "04/01/2026",
+            "unidades_productivas_count": 17,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10098546559",
+                    "razon_social": "MENENDEZ RUBIO KIMBERLEY PATRICIA"
+                },
+                {
+                    "ruc": "20613086511",
+                    "razon_social": "DATASMARTIO E.I.R.L."
+                },
+                {
+                    "ruc": "10257372842",
+                    "razon_social": "RIVAS LOPEZ YSABEL LUISA"
+                },
+                {
+                    "ruc": "10101339331",
+                    "razon_social": "PALOMINO MEDINA ALEX LEONARDO"
+                },
+                {
+                    "ruc": "10080129276",
+                    "razon_social": "DAVIRAN TURIN GLORIA MARIA"
+                },
+                {
+                    "ruc": "10102249572",
+                    "razon_social": "BAZAN LAVADO SOFIA"
+                },
+                {
+                    "ruc": "20603787952",
+                    "razon_social": "INDUSTRIAS MARZZELLI PERU CUEROS E.I.R.L."
+                },
+                {
+                    "ruc": "10750099632",
+                    "razon_social": "VILCAYAURI AVILA JULIA ESTEFANI"
+                },
+                {
+                    "ruc": "10297305731",
+                    "razon_social": "CARBAJAL CUEVA KARLO JEAN"
+                },
+                {
+                    "ruc": "20492079309",
+                    "razon_social": "CONFECCIONES BRAVA SURF E.I.R.L."
+                },
+                {
+                    "ruc": "20603757123",
+                    "razon_social": "JOCARCORP S.A.C."
+                },
+                {
+                    "ruc": "10088476731",
+                    "razon_social": "CEPEDA OLIVERA ROSA MIRNA"
+                },
+                {
+                    "ruc": "10447196820",
+                    "razon_social": "CARRASCO RUBIO VIVIANA CAROLINA"
+                },
+                {
+                    "ruc": "20603425970",
+                    "razon_social": "INFORMATICA NACIONAL E.I.R.L."
+                },
+                {
+                    "ruc": "10403410662",
+                    "razon_social": "GOMEZ BEJARANO EDITH KAREM"
+                },
+                {
+                    "ruc": "20253349493",
+                    "razon_social": "EDITORIAL AMISTAD S.R.LTDA"
+                },
+                {
+                    "ruc": "20615322670",
+                    "razon_social": "MARS MARCANDO TENDENCIA EIRL"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv07_001",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Huancavelica",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "04/08/2026",
+            "fecha_fin": "04/08/2026",
+            "unidades_productivas_count": 33,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10720075739",
+                    "razon_social": "ROJAS MONTAÑEZ WILDER"
+                },
+                {
+                    "ruc": "20517512304",
+                    "razon_social": "INVERSIONES INDUSTRIALES SAN MARTIN E.I.R.L."
+                },
+                {
+                    "ruc": "10732701261",
+                    "razon_social": "RODAS ROMERO ERIKA GABRIELA"
+                },
+                {
+                    "ruc": "10107130271",
+                    "razon_social": "REQUEJO CRUZ LORENZO"
+                },
+                {
+                    "ruc": "10754065996",
+                    "razon_social": "CHAMBILLA PAREDES GIANELLA MILAGROS"
+                },
+                {
+                    "ruc": "10422896665",
+                    "razon_social": "LOPEZ BERROSPI DELSSY INES"
+                },
+                {
+                    "ruc": "20609360918",
+                    "razon_social": "GIOVANNA GRUNDI BAGS E.I.R.L."
+                },
+                {
+                    "ruc": "10421716191",
+                    "razon_social": "HUALLPA RIVERA LI ROXANA"
+                },
+                {
+                    "ruc": "10095845237",
+                    "razon_social": "CRUZ HUALLPA ANDERSON"
+                },
+                {
+                    "ruc": "10754348572",
+                    "razon_social": "JULI MAMANI DANNY ESAU"
+                },
+                {
+                    "ruc": "20606615460",
+                    "razon_social": "MARJOSS COMPANY S.A.C."
+                },
+                {
+                    "ruc": "20612923028",
+                    "razon_social": "SOCIEDAD FUNDO MINASANI DE PRODUCTORES DE CAMELIDOS CUSCO - SOFUNMI-PROCAC"
+                },
+                {
+                    "ruc": "20610256873",
+                    "razon_social": "JEANETTE LEIVA E.I.R.L."
+                },
+                {
+                    "ruc": "10423065881",
+                    "razon_social": "MEDINA ANCASI OMAR SAJHID"
+                },
+                {
+                    "ruc": "20440207422",
+                    "razon_social": "CURTIDURIA ORION S.A.C."
+                },
+                {
+                    "ruc": "10408063766",
+                    "razon_social": "ACEVEDO BELLIDO LILLANA YULI"
+                },
+                {
+                    "ruc": "10102288241",
+                    "razon_social": "SANZ HUANQUI SAHARA GINNA"
+                },
+                {
+                    "ruc": "10292530213",
+                    "razon_social": "CESPEDES ZAMATA ALEJANDRO NESTOR"
+                },
+                {
+                    "ruc": "10430911347",
+                    "razon_social": "ORTIZ PRINCIPE MARILLY"
+                },
+                {
+                    "ruc": "20615177271",
+                    "razon_social": "VERTEX LEATHER PERU S.A.C."
+                },
+                {
+                    "ruc": "10475791113",
+                    "razon_social": "ROMERO SIRLOPU LINDA RUTH MAGALY"
+                },
+                {
+                    "ruc": "20455175781",
+                    "razon_social": "PERUVIAN DRESS TPX S.A.C."
+                },
+                {
+                    "ruc": "10402004971",
+                    "razon_social": "HUARANGA NUÑEZ JUAN ANIBAL"
+                },
+                {
+                    "ruc": "10701598526",
+                    "razon_social": "QUISPE PACOMPIA RONAL YON"
+                },
+                {
+                    "ruc": "10801466406",
+                    "razon_social": "MAMANI QUENTA DANIEL"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv07_002",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "04/09/2026",
+            "fecha_fin": "04/09/2026",
+            "unidades_productivas_count": 48,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10753378761",
+                    "razon_social": "ROJAS MARTINEZ STEVEN PAOLO"
+                },
+                {
+                    "ruc": "20606699167",
+                    "razon_social": "CORPORACION JUSTO JYC S.A.C."
+                },
+                {
+                    "ruc": "10424120494",
+                    "razon_social": "SALCEDO ROMAN JHON GHEINER"
+                },
+                {
+                    "ruc": "10103490451",
+                    "razon_social": "JARA HERMENEGILDO CHARLIE TORIBIO"
+                },
+                {
+                    "ruc": "10403410662",
+                    "razon_social": "GOMEZ BEJARANO EDITH KAREM"
+                },
+                {
+                    "ruc": "10164631562",
+                    "razon_social": "RAFFO BUSTAMANTE MILAGROS MONICA"
+                },
+                {
+                    "ruc": "10484261976",
+                    "razon_social": "VILLARROEL CLAROS MICHAEL CRISTHIAN"
+                },
+                {
+                    "ruc": "10423145990",
+                    "razon_social": "CAMARENA MENA MAURA BETTY"
+                },
+                {
+                    "ruc": "10432603631",
+                    "razon_social": "YHUARAQUI VASQUEZ LUZ MICENA"
+                },
+                {
+                    "ruc": "20605811354",
+                    "razon_social": "INDUSTRIAS DEL CALZADO SHULTS EIRL"
+                },
+                {
+                    "ruc": "10436103960",
+                    "razon_social": "MEDINA ATAUCUSI JUAN RUBEN"
+                },
+                {
+                    "ruc": "10766077965",
+                    "razon_social": "POMAHUALLCA ZAVALA ELENA DEL PILAR"
+                },
+                {
+                    "ruc": "10482250195",
+                    "razon_social": "BARRETO ROJAS EDITH FLORENCIA"
+                },
+                {
+                    "ruc": "10447222120",
+                    "razon_social": "AYALA CABALLERO JENNIFER CAROLINA"
+                },
+                {
+                    "ruc": "10472251690",
+                    "razon_social": "EGÜES CUYA BETSABE INES"
+                },
+                {
+                    "ruc": "10426778055",
+                    "razon_social": "CONDORI RAMOS JUDITH"
+                },
+                {
+                    "ruc": "10427895250",
+                    "razon_social": "BURGOS AVILA JOSE LUIS"
+                },
+                {
+                    "ruc": "10705054911",
+                    "razon_social": "YEPEZ PICON EDUARDO CESAR"
+                },
+                {
+                    "ruc": "20606784113",
+                    "razon_social": "INVERSIONES KUERITOS TAK EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "10181977723",
+                    "razon_social": "CORDOVA MOGOLLON ANA MARIA"
+                },
+                {
+                    "ruc": "20554480196",
+                    "razon_social": "ESTUDIO P & G ASESORES EMPRESARIALES S.A.C."
+                },
+                {
+                    "ruc": "10441293441",
+                    "razon_social": "PILCO ASENCIOS HENRY MACCOY"
+                },
+                {
+                    "ruc": "10099816258",
+                    "razon_social": "FLORES RAMOS FELIX YORATO"
+                },
+                {
+                    "ruc": "20610201459",
+                    "razon_social": "CORPORACION CEMAZI S.A.C."
+                },
+                {
+                    "ruc": "10013312783",
+                    "razon_social": "ARO CCALLI GERMAN"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv07_003",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 35,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10747808541",
+                    "razon_social": "RIVERA ALARCON IBETH ANGELA"
+                },
+                {
+                    "ruc": "20600961609",
+                    "razon_social": "JOMM'S CORP E.I.R.L."
+                },
+                {
+                    "ruc": "10753964636",
+                    "razon_social": "MACHACA RETAMOZO MARITZA"
+                },
+                {
+                    "ruc": "10409445409",
+                    "razon_social": "AGUILAR MAMANI NINFA IRENE"
+                },
+                {
+                    "ruc": "10296939736",
+                    "razon_social": "SEVIN CCOLQQUE DELFIN GREGORIO"
+                },
+                {
+                    "ruc": "10013312783",
+                    "razon_social": "ARO CCALLI GERMAN"
+                },
+                {
+                    "ruc": "10770141422",
+                    "razon_social": "GOMEZ AYALA JESUS POOL"
+                },
+                {
+                    "ruc": "20454892489",
+                    "razon_social": "CORPORACION CRUZ E.I.R.L."
+                },
+                {
+                    "ruc": "10467866988",
+                    "razon_social": "PORTA QUINTIMARI CAMILO DANTE"
+                },
+                {
+                    "ruc": "10212875541",
+                    "razon_social": "NIEVA PUCHOC LUIS RAUL"
+                },
+                {
+                    "ruc": "10090718920",
+                    "razon_social": "DE PAZ FALVY WILMER AGUSTIN"
+                },
+                {
+                    "ruc": "10425230218",
+                    "razon_social": "TICONA ARCE ANA ISABEL"
+                },
+                {
+                    "ruc": "10296859473",
+                    "razon_social": "ROJAS CHEJE JUDITH NOEMI"
+                },
+                {
+                    "ruc": "10310075847",
+                    "razon_social": "ATOCCSA NAVARRO CLAUDIO"
+                },
+                {
+                    "ruc": "10258208574",
+                    "razon_social": "MESTANZA ALVARADO CARMEN VANESSA"
+                },
+                {
+                    "ruc": "10446745056",
+                    "razon_social": "CHOQUEHUANCA RODRIGO JOHN"
+                },
+                {
+                    "ruc": "10200732800",
+                    "razon_social": "PORRAS POMA MARLENE GLADYS"
+                },
+                {
+                    "ruc": "10067400777",
+                    "razon_social": "PORTURAS ARRIOLA JUAN CARLOS"
+                },
+                {
+                    "ruc": "10206761194",
+                    "razon_social": "MUCHA PEREZ SIMEONA JUANA"
+                },
+                {
+                    "ruc": "10204134451",
+                    "razon_social": "MUÑOZ ALMONACID PERCY DELFOR"
+                },
+                {
+                    "ruc": "10463688481",
+                    "razon_social": "PAUCAR SEGURA CINTHYA"
+                },
+                {
+                    "ruc": "20606670657",
+                    "razon_social": "3ELEMENTOS S.A.C."
+                },
+                {
+                    "ruc": "20614876311",
+                    "razon_social": "CORPORACION RIBEIRO E.I.R.L."
+                },
+                {
+                    "ruc": "20523169441",
+                    "razon_social": "CALZADOS DE MODA S.A.C."
+                },
+                {
+                    "ruc": "10074794314",
+                    "razon_social": "ROSAS CONTRERAS DULIA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite08_serv07_004",
+            "cite_ut": "CITEcuero y Calzado Lima",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 20,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10297127433",
+                    "razon_social": "SUANI OCHOA JOHN RICHARD"
+                },
+                {
+                    "ruc": "10424264241",
+                    "razon_social": "PEREZ CISTERNA SEGUNDO GUILLERMO"
+                },
+                {
+                    "ruc": "10296939736",
+                    "razon_social": "SEVIN CCOLQQUE DELFIN GREGORIO"
+                },
+                {
+                    "ruc": "20612335487",
+                    "razon_social": "KALLPA CLOTHING S.A.C."
+                },
+                {
+                    "ruc": "10402794645",
+                    "razon_social": "SARAVIA CABEZUDO SARA CECILIA"
+                },
+                {
+                    "ruc": "20607752380",
+                    "razon_social": "MURATS BAG E.I.R.L."
+                },
+                {
+                    "ruc": "10068019457",
+                    "razon_social": "LOPEZ CASTILLO JENNIFFER"
+                },
+                {
+                    "ruc": "10207241399",
+                    "razon_social": "GONZALES CHAVEZ PERCY LUIS"
+                },
+                {
+                    "ruc": "20610201459",
+                    "razon_social": "CORPORACION CEMAZI S.A.C."
+                },
+                {
+                    "ruc": "10160236642",
+                    "razon_social": "VERAMENDI MARGARITO ELVIS DAGOBERTO"
+                },
+                {
+                    "ruc": "20523561309",
+                    "razon_social": "ATARAKXIA S.A.C."
+                },
+                {
+                    "ruc": "10297305731",
+                    "razon_social": "CARBAJAL CUEVA KARLO JEAN"
+                },
+                {
+                    "ruc": "20614876311",
+                    "razon_social": "CORPORACION RIBEIRO E.I.R.L."
+                },
+                {
+                    "ruc": "10440313006",
+                    "razon_social": "CABRERA GUTIERREZ MELISA RAQUEL"
+                },
+                {
+                    "ruc": "10296580371",
+                    "razon_social": "FERNANDEZ FERNANDEZ ROBERTO JULIO"
+                },
+                {
+                    "ruc": "10467069417",
+                    "razon_social": "ACEVEDO TORRE KELCY ROCIO"
+                },
+                {
+                    "ruc": "20600610172",
+                    "razon_social": "CUEROS ALEXA S.A.C."
+                },
+                {
+                    "ruc": "10402040667",
+                    "razon_social": "HUALLYAQUISPE LOPEZ ANTONIO ORLANDO"
+                },
+                {
+                    "ruc": "10296320337",
+                    "razon_social": "MOSCOSO QUISPE DE ARRATIA GLADYS"
+                },
+                {
+                    "ruc": "20555075384",
+                    "razon_social": "NEGOCIOS E INVERSIONES ANA PATRICIA E.I.R.L."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite09_serv05_001",
+            "cite_ut": "CITEcuero y Calzado Arequipa",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "Puno",
+            "horas_efect": 8.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 36,
+            "observaciones_raw": "[Lista de asistentes por día]: El informe menciona un anexo de registro de asistencia, pero no lo incluye para su verificación. | [Evidencia de convocatoria]: Se proporciona un enlace de inscripción, pero no se presenta la evidencia de la convocatoria del evento. | [Relación participantes - unidades productivas]: Aunque se menciona la participación de representantes de empresas, no se incluye una lista específica que relacione a cada participante con su unidad productiva.",
+            "criterios": [
+                {
+                    "criterio": "Lista de asistentes por día",
+                    "detalle": "El informe menciona un anexo de registro de asistencia, pero no lo incluye para su verificación.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Evidencia de convocatoria",
+                    "detalle": "Se proporciona un enlace de inscripción, pero no se presenta la evidencia de la convocatoria del evento.",
+                    "aprobado": false
+                },
+                {
+                    "criterio": "Relación participantes - unidades productivas",
+                    "detalle": "Aunque se menciona la participación de representantes de empresas, no se incluye una lista específica que relacione a cada participante con su unidad productiva.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10445980124",
+                    "razon_social": "ARPI PONCE NELSON"
+                },
+                {
+                    "ruc": "10013312783",
+                    "razon_social": "ARO CCALLI GERMAN"
+                },
+                {
+                    "ruc": "10412886637",
+                    "razon_social": "MAMANI ORTIZ PORFIRIO"
+                },
+                {
+                    "ruc": "20456241027",
+                    "razon_social": "ILLARY AQP E.I.R.L."
+                },
+                {
+                    "ruc": "10293437241",
+                    "razon_social": "SALGUERO TACO LUPE JUANA"
+                },
+                {
+                    "ruc": "10464797349",
+                    "razon_social": "PAUCAR SEGURA HENRY URIEL"
+                },
+                {
+                    "ruc": "20610201459",
+                    "razon_social": "CORPORACION CEMAZI S.A.C."
+                },
+                {
+                    "ruc": "10425230218",
+                    "razon_social": "TICONA ARCE ANA ISABEL"
+                },
+                {
+                    "ruc": "20608103768",
+                    "razon_social": "INDUSTRIAS ZAVAL S.A.C."
+                },
+                {
+                    "ruc": "10296411464",
+                    "razon_social": "HUILLCA HUARAYA LIVIO"
+                },
+                {
+                    "ruc": "20600503384",
+                    "razon_social": "CURMA PERU E.I.R.L."
+                },
+                {
+                    "ruc": "20601609241",
+                    "razon_social": "AGRICOLA FRUTOS DEL VALLE S.A.C."
+                },
+                {
+                    "ruc": "20601856990",
+                    "razon_social": "CORPORACION D'PIERINA E.I.R.L."
+                },
+                {
+                    "ruc": "20503141389",
+                    "razon_social": "ELECTRO FERRO CENTRO S.A.C. - EFC SAC"
+                },
+                {
+                    "ruc": "10296320337",
+                    "razon_social": "MOSCOSO QUISPE DE ARRATIA GLADYS"
+                },
+                {
+                    "ruc": "10296104235",
+                    "razon_social": "VELASQUEZ MESTAS DE RODRIGUEZ GUADALUPE ESMERITA"
+                },
+                {
+                    "ruc": "10426778055",
+                    "razon_social": "CONDORI RAMOS JUDITH"
+                },
+                {
+                    "ruc": "10409666405",
+                    "razon_social": "YANA SULLCA JUAN TITO"
+                },
+                {
+                    "ruc": "20601342147",
+                    "razon_social": "GRUPO DUSANTOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - GRUPO DUSANTOS E.I.R.L."
+                },
+                {
+                    "ruc": "10449881562",
+                    "razon_social": "FERNANDEZ QUINTANO GROWER PAUL"
+                },
+                {
+                    "ruc": "10167782961",
+                    "razon_social": "PAMPA RODRIGO ERNESTO LORENZO"
+                },
+                {
+                    "ruc": "20600762606",
+                    "razon_social": "NEGOCIACIONES Y SERVICIOS LEON DEL SUR SOCIEDAD ANONIMA CERRADA - N & S LEON DEL SUR S.A.C."
+                },
+                {
+                    "ruc": "20610380361",
+                    "razon_social": "INDUSTRIA DE CALZADO NOVA S.A.C."
+                },
+                {
+                    "ruc": "20613109707",
+                    "razon_social": "L & A KOMAR TRENDY S.A.C."
+                },
+                {
+                    "ruc": "10484384326",
+                    "razon_social": "ENCINA VICTORIO JASON BRAYAHAN"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite09_serv07_001",
+            "cite_ut": "CITEcuero y Calzado Arequipa",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "04/07/2026",
+            "fecha_fin": "04/07/2026",
+            "unidades_productivas_count": 45,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10167782961",
+                    "razon_social": "PAMPA RODRIGO ERNESTO LORENZO"
+                },
+                {
+                    "ruc": "10297274665",
+                    "razon_social": "CHAMBI CONDORI NANCY"
+                },
+                {
+                    "ruc": "20610380361",
+                    "razon_social": "INDUSTRIA DE CALZADO NOVA S.A.C."
+                },
+                {
+                    "ruc": "20455447888",
+                    "razon_social": "TRADE SANDDER GROUP S.A.C."
+                },
+                {
+                    "ruc": "20539686195",
+                    "razon_social": "FABRICA DE CALZADOS NOVA E.I.R.L."
+                },
+                {
+                    "ruc": "20611574968",
+                    "razon_social": "GRUPO CALZAFAB E.I.R.L."
+                },
+                {
+                    "ruc": "10295433952",
+                    "razon_social": "FLORES BENAVENTE BLANCA VICTORIA"
+                },
+                {
+                    "ruc": "10292629619",
+                    "razon_social": "FLORES MENDOZA MARTIN PERCY"
+                },
+                {
+                    "ruc": "20456241027",
+                    "razon_social": "ILLARY AQP E.I.R.L."
+                },
+                {
+                    "ruc": "10292864995",
+                    "razon_social": "RODRIGUEZ GONZALES MARIA"
+                },
+                {
+                    "ruc": "10296320337",
+                    "razon_social": "MOSCOSO QUISPE DE ARRATIA GLADYS"
+                },
+                {
+                    "ruc": "20454685939",
+                    "razon_social": "YOLIS IMPORT & EXPORT E.I.R.L."
+                },
+                {
+                    "ruc": "10013312783",
+                    "razon_social": "ARO CCALLI GERMAN"
+                },
+                {
+                    "ruc": "20600981553",
+                    "razon_social": "LE CUIR EXOTICA E.I.R.L."
+                },
+                {
+                    "ruc": "10802021009",
+                    "razon_social": "ANCO TEJADA JUAN RAMON"
+                },
+                {
+                    "ruc": "20454890788",
+                    "razon_social": "CUEROS Y CONFECCIONES AREQUIPEÑOS E.I.R.L."
+                },
+                {
+                    "ruc": "10445980124",
+                    "razon_social": "ARPI PONCE NELSON"
+                },
+                {
+                    "ruc": "10024140674",
+                    "razon_social": "ARPI PONCE JAVIER VITO"
+                },
+                {
+                    "ruc": "10294847427",
+                    "razon_social": "CALDERON ESCOBEDO JOHN RICHARD"
+                },
+                {
+                    "ruc": "20610346724",
+                    "razon_social": "INGENIERIA INDUSTRIAL DEL CALZADO S.A.C."
+                },
+                {
+                    "ruc": "20498531572",
+                    "razon_social": "NAPIEL E.I.R.L."
+                },
+                {
+                    "ruc": "10484384326",
+                    "razon_social": "ENCINA VICTORIO JASON BRAYAHAN"
+                },
+                {
+                    "ruc": "10246765362",
+                    "razon_social": "ESTRADA POCOHUANCA ERNESTO"
+                },
+                {
+                    "ruc": "20612583294",
+                    "razon_social": "CANGURO PERU S.A.C."
+                },
+                {
+                    "ruc": "10449881562",
+                    "razon_social": "FERNANDEZ QUINTANO GROWER PAUL"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite09_serv07_002",
+            "cite_ut": "CITEcuero y Calzado Arequipa",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 15,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10296320337",
+                    "razon_social": "MOSCOSO QUISPE DE ARRATIA GLADYS"
+                },
+                {
+                    "ruc": "20600981553",
+                    "razon_social": "LE CUIR EXOTICA E.I.R.L."
+                },
+                {
+                    "ruc": "20600762606",
+                    "razon_social": "NEGOCIACIONES Y SERVICIOS LEON DEL SUR SOCIEDAD ANONIMA CERRADA - N & S LEON DEL SUR S.A.C."
+                },
+                {
+                    "ruc": "10462066622",
+                    "razon_social": "VALERIANO CHOQUEHUANCA ROCIO FORTUNATA"
+                },
+                {
+                    "ruc": "20601342147",
+                    "razon_social": "GRUPO DUSANTOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - GRUPO DUSANTOS E.I.R.L."
+                },
+                {
+                    "ruc": "20609184681",
+                    "razon_social": "CORPORACION E & A EURO ARMUR CALZADOS E.I.R.L."
+                },
+                {
+                    "ruc": "10472778418",
+                    "razon_social": "MAMANI TICONA LIZETH MAGDA"
+                },
+                {
+                    "ruc": "10401728525",
+                    "razon_social": "MEJIA QUISPE SHANTTY SUJEY"
+                },
+                {
+                    "ruc": "20601435404",
+                    "razon_social": "COMMOD EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - COMMOD E.I.R.L."
+                },
+                {
+                    "ruc": "10297360553",
+                    "razon_social": "CUADROS HUAMAN MARIA DEL CARMEN"
+                },
+                {
+                    "ruc": "20455175276",
+                    "razon_social": "IMPORTADORA Y EXPORTADORA CALZASUR - DIMAR'S S.A."
+                },
+                {
+                    "ruc": "20615773035",
+                    "razon_social": "ASOCIACIÓN DE PRODUCTORES DE AREQUIPA MAMBRA MODA EN CUERO"
+                },
+                {
+                    "ruc": "20614081067",
+                    "razon_social": "TEXTILES DEL PERU ECOIDEAS S.A.C."
+                },
+                {
+                    "ruc": "10297351651",
+                    "razon_social": "FLORES FLORES REINA"
+                },
+                {
+                    "ruc": "20603665393",
+                    "razon_social": "EVA GROUP SOCIEDAD ANÓNIMA CERRADA - EVA GROUP S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite09_serv07_003",
+            "cite_ut": "CITEcuero y Calzado Arequipa",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 4.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 48,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20600981553",
+                    "razon_social": "LE CUIR EXOTICA E.I.R.L."
+                },
+                {
+                    "ruc": "10295596983",
+                    "razon_social": "CASAZOLA SANCHEZ MARGARITA"
+                },
+                {
+                    "ruc": "20606965053",
+                    "razon_social": "CURTIEMBRE BUENAVENTURA S.A.C."
+                },
+                {
+                    "ruc": "10296100442",
+                    "razon_social": "SOTO VELASQUEZ JAIME CARLOS"
+                },
+                {
+                    "ruc": "10439717217",
+                    "razon_social": "PALOMINO CCAPA ROXANA CARMEN"
+                },
+                {
+                    "ruc": "10292530213",
+                    "razon_social": "CESPEDES ZAMATA ALEJANDRO NESTOR"
+                },
+                {
+                    "ruc": "10400454715",
+                    "razon_social": "MAMANI CALSIN ANTONIO"
+                },
+                {
+                    "ruc": "10434162951",
+                    "razon_social": "HUARCA CALDERON EDGAR"
+                },
+                {
+                    "ruc": "10292857158",
+                    "razon_social": "HURTADO MEJIA FERNANDO"
+                },
+                {
+                    "ruc": "10294258413",
+                    "razon_social": "CHECASACA GUTIERREZ LEON FELIPE"
+                },
+                {
+                    "ruc": "10292629619",
+                    "razon_social": "FLORES MENDOZA MARTIN PERCY"
+                },
+                {
+                    "ruc": "10296218427",
+                    "razon_social": "NIEBLES MAMANI ALVARO JOSE"
+                },
+                {
+                    "ruc": "10238245856",
+                    "razon_social": "CRUZ VALENZUELA ANGEL AGUSTIN"
+                },
+                {
+                    "ruc": "10308624396",
+                    "razon_social": "GUTIERREZ VELASQUEZ DORIS"
+                },
+                {
+                    "ruc": "10405878939",
+                    "razon_social": "QUEQUEJANA CONDORI HILARIO"
+                },
+                {
+                    "ruc": "20558613581",
+                    "razon_social": "UNDER ATTACK INDUSTRIES S.A."
+                },
+                {
+                    "ruc": "20601435404",
+                    "razon_social": "COMMOD EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - COMMOD E.I.R.L."
+                },
+                {
+                    "ruc": "10295936822",
+                    "razon_social": "PPACCO HUILLCA CELSO"
+                },
+                {
+                    "ruc": "20124922942",
+                    "razon_social": "GLOBO SRL"
+                },
+                {
+                    "ruc": "20498124004",
+                    "razon_social": "SKIN LEATHER EXPORT IMPORT S.R.L."
+                },
+                {
+                    "ruc": "10243844148",
+                    "razon_social": "VELARDE CANAZA CARLOS JULIO"
+                },
+                {
+                    "ruc": "20601968178",
+                    "razon_social": "INDUSTRIAS DE CALZADOS DEIBOL SOCIEDAD ANÓNIMA CERRADA - DEIBOL S.A.C."
+                },
+                {
+                    "ruc": "20603665393",
+                    "razon_social": "EVA GROUP SOCIEDAD ANÓNIMA CERRADA - EVA GROUP S.A.C."
+                },
+                {
+                    "ruc": "10426778055",
+                    "razon_social": "CONDORI RAMOS JUDITH"
+                },
+                {
+                    "ruc": "10167782961",
+                    "razon_social": "PAMPA RODRIGO ERNESTO LORENZO"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite10_serv05_001",
+            "cite_ut": "CITEcuero y Calzado Trujillo",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "La Libertad",
+            "horas_efect": 32.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "04/08/2026",
+            "fecha_fin": "",
+            "unidades_productivas_count": 20,
+            "observaciones_raw": "[Lista de asistentes por día]: Se menciona la existencia del registro, pero no se proporciona el contenido real o el enlace al mismo dentro del informe. Se necesita validar dicho registro.",
+            "criterios": [
+                {
+                    "criterio": "Lista de asistentes por día",
+                    "detalle": "Se menciona la existencia del registro, pero no se proporciona el contenido real o el enlace al mismo dentro del informe. Se necesita validar dicho registro.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10403569807",
+                    "razon_social": "GUTIERREZ LEON CINTHYA OLENKA"
+                },
+                {
+                    "ruc": "10181977723",
+                    "razon_social": "CORDOVA MOGOLLON ANA MARIA"
+                },
+                {
+                    "ruc": "10180929083",
+                    "razon_social": "FERNANDEZ REBAZA ALEJANDRO LIBORIO"
+                },
+                {
+                    "ruc": "20605560831",
+                    "razon_social": "PICOTITA E.I.R.L."
+                },
+                {
+                    "ruc": "10734346581",
+                    "razon_social": "SANSONI PALACIOS MIGUEL ALONSO"
+                },
+                {
+                    "ruc": "10449159999",
+                    "razon_social": "DEL AGUILA CORNEJO NOELIA CAROLINA"
+                },
+                {
+                    "ruc": "10405469931",
+                    "razon_social": "GOMEZ LLERENA CARMEN ROCIO"
+                },
+                {
+                    "ruc": "10181388337",
+                    "razon_social": "ROJAS REYES JOSE LUIS"
+                },
+                {
+                    "ruc": "10329484691",
+                    "razon_social": "RODRIGUEZ VILLANUEVA ROSA MARIA"
+                },
+                {
+                    "ruc": "10425790418",
+                    "razon_social": "RODRIGUEZ VENTURA GEYSSELL LISBETH"
+                },
+                {
+                    "ruc": "10181606571",
+                    "razon_social": "VARGAS SAITO DE GUEVARA ZULLY JANNETT"
+                },
+                {
+                    "ruc": "10739928601",
+                    "razon_social": "ROJAS JARAMILLO NATHAN ZAMIR"
+                },
+                {
+                    "ruc": "10487221720",
+                    "razon_social": "CHILON NEYRA ROBERTO CARLOS"
+                },
+                {
+                    "ruc": "10180848733",
+                    "razon_social": "MENDEZ MORENO MIRTHA BERENICE"
+                },
+                {
+                    "ruc": "20613336401",
+                    "razon_social": "J.R. BRUNNELLA E.I.R.L."
+                },
+                {
+                    "ruc": "10417899150",
+                    "razon_social": "SALOMON RIOS NISSEN YBETT"
+                },
+                {
+                    "ruc": "10095518597",
+                    "razon_social": "OBREGON JUAREZ ROSA"
+                },
+                {
+                    "ruc": "10190982136",
+                    "razon_social": "GUTIERREZ TRUJILLO ROSA VICTORIA"
+                },
+                {
+                    "ruc": "10182110618",
+                    "razon_social": "MIÑANO LUJAN EVA LETICIA"
+                },
+                {
+                    "ruc": "10450307489",
+                    "razon_social": "RODRIGUEZ ALONSO PAMELA LILIANA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite10_serv07_001",
+            "cite_ut": "CITEcuero y Calzado Trujillo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "La Libertad",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 16,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20559593401",
+                    "razon_social": "MULTISERVICIOS VALVER´D S.A.C."
+                },
+                {
+                    "ruc": "20477557946",
+                    "razon_social": "INDUSTRIAS Y SERVICIOS DE EQUIPOS DE SEGURIDAD E.I.R.L. - INSERSEG E.I.R.L."
+                },
+                {
+                    "ruc": "10181637248",
+                    "razon_social": "TAMAYO CASTILLO ANGEL MANUEL"
+                },
+                {
+                    "ruc": "10741474846",
+                    "razon_social": "RAVELLO RIVEROS JEFFERSON MIKE"
+                },
+                {
+                    "ruc": "20482122478",
+                    "razon_social": "INVERSIONES & NEGOCIOS ZAFEVI S.A.C."
+                },
+                {
+                    "ruc": "20601999278",
+                    "razon_social": "MANUFACTURAS DE CALZADO CARELLY SPORT S.A.C."
+                },
+                {
+                    "ruc": "10181392661",
+                    "razon_social": "SANCHEZ INFANTE JORGE ALEX"
+                },
+                {
+                    "ruc": "20608399667",
+                    "razon_social": "CORPORACION EXCUSAS SHOES S.A.C."
+                },
+                {
+                    "ruc": "20481718423",
+                    "razon_social": "CALZADOS JAGUAR SAC"
+                },
+                {
+                    "ruc": "10190969580",
+                    "razon_social": "CASTRO PICHON DORIS MARIELA"
+                },
+                {
+                    "ruc": "10180797161",
+                    "razon_social": "LOPEZ ZAVALETA JOSE LUIS"
+                },
+                {
+                    "ruc": "10181697500",
+                    "razon_social": "ARTEAGA AVILA SULMAN ELIANA"
+                },
+                {
+                    "ruc": "10178235023",
+                    "razon_social": "FLORES SANCHEZ JORGE LUIS"
+                },
+                {
+                    "ruc": "10179039660",
+                    "razon_social": "SOLANO BLAS RODMAN CESAR"
+                },
+                {
+                    "ruc": "20615015319",
+                    "razon_social": "CORPORACION JHONSTEPS INNOVACION Y CALZADO S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite10_serv07_002",
+            "cite_ut": "CITEcuero y Calzado Trujillo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "La Libertad",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 16,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20477502025",
+                    "razon_social": "CONSORCIO LUCAMI S.A.C."
+                },
+                {
+                    "ruc": "10414901935",
+                    "razon_social": "NAVES LAYZA IVAN"
+                },
+                {
+                    "ruc": "10412764663",
+                    "razon_social": "PAZ QUIROZ RAFAEL GREGORI"
+                },
+                {
+                    "ruc": "10410856846",
+                    "razon_social": "LUJAN BOCANEGRA ELENA VASTI"
+                },
+                {
+                    "ruc": "10181388337",
+                    "razon_social": "ROJAS REYES JOSE LUIS"
+                },
+                {
+                    "ruc": "20607402541",
+                    "razon_social": "GRUPO BARELY S.A.C."
+                },
+                {
+                    "ruc": "10182049374",
+                    "razon_social": "RODRIGUEZ RODRIGUEZ JOSE ALVARO"
+                },
+                {
+                    "ruc": "10182110618",
+                    "razon_social": "MIÑANO LUJAN EVA LETICIA"
+                },
+                {
+                    "ruc": "20613336401",
+                    "razon_social": "J.R. BRUNNELLA E.I.R.L."
+                },
+                {
+                    "ruc": "10487221720",
+                    "razon_social": "CHILON NEYRA ROBERTO CARLOS"
+                },
+                {
+                    "ruc": "10178354049",
+                    "razon_social": "GARCIA MONTOYA VICTOR RENATO"
+                },
+                {
+                    "ruc": "10178418250",
+                    "razon_social": "AGUILAR LLAJARUNA LORENZO MANUEL"
+                },
+                {
+                    "ruc": "10715093401",
+                    "razon_social": "BAUTISTA VALDERRAMA FRANCIS STEVEN"
+                },
+                {
+                    "ruc": "10408441795",
+                    "razon_social": "LOPEZ SANTIAGO LUIS EMILIANO"
+                },
+                {
+                    "ruc": "10750460726",
+                    "razon_social": "BARROS VALLE FABIO AGUSTIN"
+                },
+                {
+                    "ruc": "20482775862",
+                    "razon_social": "MANUFACTURAS CLAUDINNE S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite10_serv07_003",
+            "cite_ut": "CITEcuero y Calzado Trujillo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "La Libertad",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Cuero Y Calzado",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 16,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10196754950",
+                    "razon_social": "MONTOYA MENDEZ ANIBAL SIXTO"
+                },
+                {
+                    "ruc": "10180776333",
+                    "razon_social": "CHAMORRO LUIS ANITA MELVA"
+                },
+                {
+                    "ruc": "10181341578",
+                    "razon_social": "PAREDES SALVATIERRA CHARLES DUVAL"
+                },
+                {
+                    "ruc": "10178923302",
+                    "razon_social": "MOYA DE LA CRUZ WALTER ANTONIO"
+                },
+                {
+                    "ruc": "10711936420",
+                    "razon_social": "CHIJIP CASTILLO ALEX ALFREDO"
+                },
+                {
+                    "ruc": "20600655311",
+                    "razon_social": "CALZADOS E INVERSIONES DAYRON S.A.C."
+                },
+                {
+                    "ruc": "10180787360",
+                    "razon_social": "VELARDES GRADOS NILDA JACOBA"
+                },
+                {
+                    "ruc": "20608103768",
+                    "razon_social": "INDUSTRIAS ZAVAL S.A.C."
+                },
+                {
+                    "ruc": "10429467701",
+                    "razon_social": "GUZMAN BLAS AGUSTIN MANUEL"
+                },
+                {
+                    "ruc": "10487184051",
+                    "razon_social": "GAVIDIA RODRIGUEZ BRYAN PAUL"
+                },
+                {
+                    "ruc": "20481591687",
+                    "razon_social": "T' KALZA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "10409571013",
+                    "razon_social": "GOMEZ GONZALES ROXANA EDITH"
+                },
+                {
+                    "ruc": "10181697500",
+                    "razon_social": "ARTEAGA AVILA SULMAN ELIANA"
+                },
+                {
+                    "ruc": "10179087940",
+                    "razon_social": "ROMAN TRUJILLO RITA MATILDE"
+                },
+                {
+                    "ruc": "10436372472",
+                    "razon_social": "MEREGILDO LAZARO JHONSON RUSBER"
+                },
+                {
+                    "ruc": "10179298894",
+                    "razon_social": "CASTAÑEDA BENITES LUCY CAROL"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite13_serv05_001",
+            "cite_ut": "CITEmadera y del Mueble",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "OBSERVADO",
+            "region": "Lima",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Madera",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 6,
+            "observaciones_raw": "[Evidencia de convocatoria]: No se encontraron elementos visuales o textuales que sirvan como evidencia de convocatoria al público para la capacitación.",
+            "criterios": [
+                {
+                    "criterio": "Evidencia de convocatoria",
+                    "detalle": "No se encontraron elementos visuales o textuales que sirvan como evidencia de convocatoria al público para la capacitación.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20610237500",
+                    "razon_social": "MAKAL INTERNATIONAL S.A.C."
+                },
+                {
+                    "ruc": "10401243122",
+                    "razon_social": "LAUREANO HERRERA JUAN CARLOS"
+                },
+                {
+                    "ruc": "10179034889",
+                    "razon_social": "CUBA RAMOS RONALD ALFREDO"
+                },
+                {
+                    "ruc": "10403070705",
+                    "razon_social": "PAURO HUANCA EDGAR"
+                },
+                {
+                    "ruc": "77817323",
+                    "razon_social": "ELIZABETH QUISPE HUAMANÍ"
+                },
+                {
+                    "ruc": "10412705268",
+                    "razon_social": "PAETAN VILLANUEVA JACQUELINE ASTRID"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite13_serv07_001",
+            "cite_ut": "CITEmadera y del Mueble",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 1.1,
+            "cadena_productiva": "Madera",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 38,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10069522276",
+                    "razon_social": "ESCOBEDO MEDINA WALTER HUMBERTO"
+                },
+                {
+                    "ruc": "20555509481",
+                    "razon_social": "ALROD PLAST S.A.C."
+                },
+                {
+                    "ruc": "20527030421",
+                    "razon_social": "MADERERA RIO ACRE S.A.C."
+                },
+                {
+                    "ruc": "20453777091",
+                    "razon_social": "INVERSIONES CIMAS EIRL"
+                },
+                {
+                    "ruc": "10424566255",
+                    "razon_social": "ROSALES GOMEZ BASILIO FELIX"
+                },
+                {
+                    "ruc": "20467564529",
+                    "razon_social": "DISTRIBUIDORA DE MADERA RAMOS Y DIONISIO S.A.C. - DISMARDI S.A.C."
+                },
+                {
+                    "ruc": "20608254863",
+                    "razon_social": "CONSTRUCCIONES Y SERVICIOS GENERALES OLIJUA E.I.R.L."
+                },
+                {
+                    "ruc": "20613651625",
+                    "razon_social": "LINEA MAESTRA INTERIORES S.A.C."
+                },
+                {
+                    "ruc": "20496112424",
+                    "razon_social": "CONSTRUCTORA EL TINGO S.R.L."
+                },
+                {
+                    "ruc": "20514489441",
+                    "razon_social": "MUEBLES SAN JOSE E.I.R.L"
+                },
+                {
+                    "ruc": "20615188051",
+                    "razon_social": "SERVICIOS FORESTALES JP E.I.R.L."
+                },
+                {
+                    "ruc": "20512855220",
+                    "razon_social": "C.G.C. SAN HILARION S.A.C."
+                },
+                {
+                    "ruc": "20543627063",
+                    "razon_social": "DSG INTERIOR S.A.C."
+                },
+                {
+                    "ruc": "20602206247",
+                    "razon_social": "CROMACRIL ARTE Y DISEÑO SAC"
+                },
+                {
+                    "ruc": "20603386575",
+                    "razon_social": "HOUSE PROJECT SOCIEDAD ANONIMA CERRADA"
+                },
+                {
+                    "ruc": "20508691301",
+                    "razon_social": "CENTEX INSTRUMENTACION Y EQUIPOS S.A.C."
+                },
+                {
+                    "ruc": "20604686840",
+                    "razon_social": "5S CONSTRUCCION Y SERVICIOS S.A.C."
+                },
+                {
+                    "ruc": "20533007580",
+                    "razon_social": "MUEBLES RAMOS E.I.R.L"
+                },
+                {
+                    "ruc": "20393836084",
+                    "razon_social": "EMPRESA INDIGENA NII BIRI MARAVILLAS DEL BOSQUE S.R.L."
+                },
+                {
+                    "ruc": "20601669391",
+                    "razon_social": "COPACABANA BRASIL E.I.R.L."
+                },
+                {
+                    "ruc": "20614373955",
+                    "razon_social": "ESTUDIO G MAS J S.A.C."
+                },
+                {
+                    "ruc": "20552147601",
+                    "razon_social": "CHEMICAL A.T.P. S.A.C."
+                },
+                {
+                    "ruc": "10407185566",
+                    "razon_social": "RIMAC ROSALES NELSON RAFAEL"
+                },
+                {
+                    "ruc": "10210841356",
+                    "razon_social": "PEREZ MARTINEZ OSCAR"
+                },
+                {
+                    "ruc": "20608506528",
+                    "razon_social": "GROUP HUARCAYA SAC"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv05_001",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 20.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "03/09/2026",
+            "fecha_fin": "",
+            "unidades_productivas_count": 13,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20106498386",
+                    "razon_social": "INTERTEK TESTING SERVICES PERU S.A"
+                },
+                {
+                    "ruc": "20603037694",
+                    "razon_social": "MARICULTURA LAS BRISAS S.R.L."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20607112259",
+                    "razon_social": "BIOSUMAQ S.A.C."
+                },
+                {
+                    "ruc": "20600581768",
+                    "razon_social": "OCEANO SEAFOOD S.A."
+                },
+                {
+                    "ruc": "20601359635",
+                    "razon_social": "MARDESUR S.R.L."
+                },
+                {
+                    "ruc": "20285820139",
+                    "razon_social": "EMPRESA PESQUERA PERCAR S.A.C."
+                },
+                {
+                    "ruc": "10724768526",
+                    "razon_social": "VILLENA VILLALOBOS JEANPAUL RENATO"
+                },
+                {
+                    "ruc": "10428945421",
+                    "razon_social": "CUSI SANTOS WILBER RICARDO"
+                },
+                {
+                    "ruc": "10435217112",
+                    "razon_social": "ESCOBAR CASTRO SONIA"
+                },
+                {
+                    "ruc": "10401130395",
+                    "razon_social": "SEGURA VALDEZ RENE EMANUEL"
+                },
+                {
+                    "ruc": "20601819831",
+                    "razon_social": "CORPORACION ADESUR SOCIEDAD ANONIMA CERRADA - CORPORACION ADESUR S.A.C."
+                },
+                {
+                    "ruc": "20515672932",
+                    "razon_social": "ELECTRONICA VICENTE S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_001",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/07/2026",
+            "fecha_fin": "04/07/2026",
+            "unidades_productivas_count": 33,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20537864991",
+                    "razon_social": "TOTAL CONSULTING GROUP S.A.C"
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "20614402947",
+                    "razon_social": "PEDRO & RIVALDO INDUSTRIAL SERVICES S.A.C."
+                },
+                {
+                    "ruc": "20368464024",
+                    "razon_social": "ASOCIACION PESCADORES ARTESANALES CALETA DE VILA VILA Y ANEXOS"
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20609006383",
+                    "razon_social": "XIMA GESTIONES EMPRESARIALES S.A.C."
+                },
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "20549768106",
+                    "razon_social": "COSTA SEAFOOD S.A.C."
+                },
+                {
+                    "ruc": "20606528851",
+                    "razon_social": "QOLLKA FER S.A.C."
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                },
+                {
+                    "ruc": "20614930994",
+                    "razon_social": "BIOSUMAC SALUD E.I.R.L."
+                },
+                {
+                    "ruc": "20603644591",
+                    "razon_social": "PROCESADORA PESQUERA EL NIRVANA SOCIEDAD ANONIMA CERRADA - PROCESADORA PESQUERA EL NIRVANA S.A.C."
+                },
+                {
+                    "ruc": "20600581768",
+                    "razon_social": "OCEANO SEAFOOD S.A."
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "20517355951",
+                    "razon_social": "MEGA PESCA S.A."
+                },
+                {
+                    "ruc": "20608480481",
+                    "razon_social": "ORGANIC AMAZON PERÚ S.A.C."
+                },
+                {
+                    "ruc": "20607987042",
+                    "razon_social": "INVERSIONES ACUICOLAS ARICOTA S.R.L."
+                },
+                {
+                    "ruc": "20513632569",
+                    "razon_social": "MARINASOL S.A."
+                },
+                {
+                    "ruc": "20611440627",
+                    "razon_social": "CENTRO DE EXCELENCIA EN BIOTECNOLOGIA E INVESTIGACION TRASLACIONAL"
+                },
+                {
+                    "ruc": "20614869870",
+                    "razon_social": "ASOCIACION AYLLU TOURS SUMAQ ILLARY"
+                },
+                {
+                    "ruc": "20518458036",
+                    "razon_social": "GLOBAL EARTH EIRL"
+                },
+                {
+                    "ruc": "20508824115",
+                    "razon_social": "CONGELADOS PERUANA DEL PACIFICO SA"
+                },
+                {
+                    "ruc": "20605933611",
+                    "razon_social": "ENGINEERING & TECHNOLOGY A.R. EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_002",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 7,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10776923597",
+                    "razon_social": "CASTILLO FLORES DANIEL FERMIN"
+                },
+                {
+                    "ruc": "10304189300",
+                    "razon_social": "BECERRA MARIÑO JASMINA EDITH"
+                },
+                {
+                    "ruc": "10468450335",
+                    "razon_social": "MEDINA VIZCARRA XIOMER JUVENAL"
+                },
+                {
+                    "ruc": "10448093285",
+                    "razon_social": "SANCHEZ CAHUANA LUIS ALFREDO"
+                },
+                {
+                    "ruc": "10304883958",
+                    "razon_social": "MAMANI HUANACUNI ISABEL SUSANA"
+                },
+                {
+                    "ruc": "10728977332",
+                    "razon_social": "URQUIZO TITO JIM ERICK"
+                },
+                {
+                    "ruc": "10802638731",
+                    "razon_social": "ALVARADO LLERENA JUAN PABLO"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_003",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/08/2026",
+            "fecha_fin": "04/08/2026",
+            "unidades_productivas_count": 29,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20606528851",
+                    "razon_social": "QOLLKA FER S.A.C."
+                },
+                {
+                    "ruc": "10424179677",
+                    "razon_social": "GALDOS RAMOS EDER"
+                },
+                {
+                    "ruc": "10469204222",
+                    "razon_social": "ZAPATA CARAZAS ELEAZAR"
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "20368464024",
+                    "razon_social": "ASOCIACION PESCADORES ARTESANALES CALETA DE VILA VILA Y ANEXOS"
+                },
+                {
+                    "ruc": "10701564842",
+                    "razon_social": "QUISPE SANCHEZ LUZ MARIBEL"
+                },
+                {
+                    "ruc": "10703799618",
+                    "razon_social": "GUTIERREZ YUFRA PHAOLA KARLA DEL ROCIO"
+                },
+                {
+                    "ruc": "20609006383",
+                    "razon_social": "XIMA GESTIONES EMPRESARIALES S.A.C."
+                },
+                {
+                    "ruc": "10452603913",
+                    "razon_social": "OLIVERA GOMEZ MIRLA INES"
+                },
+                {
+                    "ruc": "10329789123",
+                    "razon_social": "LUZARDO NUÑEZ JOSE WILBERT"
+                },
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20508824115",
+                    "razon_social": "CONGELADOS PERUANA DEL PACIFICO SA"
+                },
+                {
+                    "ruc": "20602195211",
+                    "razon_social": "THAXU EXPORT SOCIEDAD ANONIMA CERRADA - THAXU EXPORT S.A.C."
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "10016996110",
+                    "razon_social": "LOPE HUAMANTUCO DAVID"
+                },
+                {
+                    "ruc": "20605933611",
+                    "razon_social": "ENGINEERING & TECHNOLOGY A.R. EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20607071536",
+                    "razon_social": "CONSORCIO DON RAUL S.A.C."
+                },
+                {
+                    "ruc": "20600918771",
+                    "razon_social": "CASYSA C & B S.A.C."
+                },
+                {
+                    "ruc": "20546645593",
+                    "razon_social": "FRIGOSA SOCIEDAD ANONIMA CERRADA - FRIGOSA S.A.C."
+                },
+                {
+                    "ruc": "20600581768",
+                    "razon_social": "OCEANO SEAFOOD S.A."
+                },
+                {
+                    "ruc": "20484309613",
+                    "razon_social": "AQUANOVA S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_004",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Moquegua",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/09/2026",
+            "fecha_fin": "04/09/2026",
+            "unidades_productivas_count": 1,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20614476657",
+                    "razon_social": "ASOCIACION DE BAHIAS, ARMADORES, PESCADORES ARTESANALES DEL SUR"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_005",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Moquegua",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "",
+            "fecha_fin": "04/01/2026",
+            "unidades_productivas_count": 9,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20532737932",
+                    "razon_social": "COMUNIDAD CAMPESINA DE ARUNTAYA"
+                },
+                {
+                    "ruc": "20613550551",
+                    "razon_social": "CORPORACION PESQUERA TACNA S.A.C."
+                },
+                {
+                    "ruc": "10426414614",
+                    "razon_social": "APAZA CAMA LOURDES CONSUELO"
+                },
+                {
+                    "ruc": "10412449334",
+                    "razon_social": "MAMANI CALLALLA DORIS YANETH"
+                },
+                {
+                    "ruc": "10806599820",
+                    "razon_social": "CALLALLA MAMANI GLADYS RITA JESUS"
+                },
+                {
+                    "ruc": "10418942865",
+                    "razon_social": "MAMANI COPA BEATRIZ NADIA"
+                },
+                {
+                    "ruc": "10047482769",
+                    "razon_social": "OLAZABAL VALDIVIEZO JULIO ERNESTO"
+                },
+                {
+                    "ruc": "10717193348",
+                    "razon_social": "CEBREROS RODRIGUEZ YELKA FIORELLA"
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_006",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 7,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10304039324",
+                    "razon_social": "VARGAS CACERES LOURDES MARIA"
+                },
+                {
+                    "ruc": "10451610789",
+                    "razon_social": "LAGOS ROSAS MARCELA MARIA"
+                },
+                {
+                    "ruc": "10483686710",
+                    "razon_social": "ALLPACCA TACOMA FLORENTINO"
+                },
+                {
+                    "ruc": "10463894413",
+                    "razon_social": "ROQUE CCAMA EVER JHON"
+                },
+                {
+                    "ruc": "10736689672",
+                    "razon_social": "MAMANI PACOHUANACO SONIA VANESSA"
+                },
+                {
+                    "ruc": "10304252451",
+                    "razon_social": "FLORES MUÑOZ FRANCISCA PRIMITIVA"
+                },
+                {
+                    "ruc": "10803187636",
+                    "razon_social": "MANRIQUE CHIRINOS GUILLERMO"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_007",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Arequipa",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 3,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10802638731",
+                    "razon_social": "ALVARADO LLERENA JUAN PABLO"
+                },
+                {
+                    "ruc": "10468450335",
+                    "razon_social": "MEDINA VIZCARRA XIOMER JUVENAL"
+                },
+                {
+                    "ruc": "10412935433",
+                    "razon_social": "APAZA LLANOS YESICA MILAGROS"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_008",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Piura",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/06/2026",
+            "fecha_fin": "04/06/2026",
+            "unidades_productivas_count": 44,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20602195211",
+                    "razon_social": "THAXU EXPORT SOCIEDAD ANONIMA CERRADA - THAXU EXPORT S.A.C."
+                },
+                {
+                    "ruc": "20527032041",
+                    "razon_social": "CORPORACION PESQUERA DEL SUR SOCIEDAD ANONIMA CERRADA - COPESUR SAC"
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "20604295131",
+                    "razon_social": "CITROSWEET MILLS S.A.C."
+                },
+                {
+                    "ruc": "20600581768",
+                    "razon_social": "OCEANO SEAFOOD S.A."
+                },
+                {
+                    "ruc": "20605933611",
+                    "razon_social": "ENGINEERING & TECHNOLOGY A.R. EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20368464024",
+                    "razon_social": "ASOCIACION PESCADORES ARTESANALES CALETA DE VILA VILA Y ANEXOS"
+                },
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20484315699",
+                    "razon_social": "UNITED OCEAN'S S.A.C."
+                },
+                {
+                    "ruc": "20608327372",
+                    "razon_social": "LARAVI PERU S.A.C."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20525495079",
+                    "razon_social": "PESQUERA HERMANOS CORDOVA S.A.C."
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "20537864991",
+                    "razon_social": "TOTAL CONSULTING GROUP S.A.C"
+                },
+                {
+                    "ruc": "20608480481",
+                    "razon_social": "ORGANIC AMAZON PERÚ S.A.C."
+                },
+                {
+                    "ruc": "20607987042",
+                    "razon_social": "INVERSIONES ACUICOLAS ARICOTA S.R.L."
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "20549768106",
+                    "razon_social": "COSTA SEAFOOD S.A.C."
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "20614930994",
+                    "razon_social": "BIOSUMAC SALUD E.I.R.L."
+                },
+                {
+                    "ruc": "20513632569",
+                    "razon_social": "MARINASOL S.A."
+                },
+                {
+                    "ruc": "20603644591",
+                    "razon_social": "PROCESADORA PESQUERA EL NIRVANA SOCIEDAD ANONIMA CERRADA - PROCESADORA PESQUERA EL NIRVANA S.A.C."
+                },
+                {
+                    "ruc": "20472086457",
+                    "razon_social": "AMERICAN QUALITY AQUACULTURE S.A.C."
+                },
+                {
+                    "ruc": "20518458036",
+                    "razon_social": "GLOBAL EARTH EIRL"
+                },
+                {
+                    "ruc": "20601061008",
+                    "razon_social": "RAMOS ALVA Y LEON QUIROZ S.A.C - RALQ S.A.C"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_009",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Callao",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/06/2026",
+            "fecha_fin": "04/06/2026",
+            "unidades_productivas_count": 27,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20608480481",
+                    "razon_social": "ORGANIC AMAZON PERÚ S.A.C."
+                },
+                {
+                    "ruc": "20368464024",
+                    "razon_social": "ASOCIACION PESCADORES ARTESANALES CALETA DE VILA VILA Y ANEXOS"
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "10424179677",
+                    "razon_social": "GALDOS RAMOS EDER"
+                },
+                {
+                    "ruc": "10016996110",
+                    "razon_social": "LOPE HUAMANTUCO DAVID"
+                },
+                {
+                    "ruc": "10700457881",
+                    "razon_social": "SALAZAR MORAN CLAUDIA FIORELLA"
+                },
+                {
+                    "ruc": "10329789123",
+                    "razon_social": "LUZARDO NUÑEZ JOSE WILBERT"
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20605933611",
+                    "razon_social": "ENGINEERING & TECHNOLOGY A.R. EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                },
+                {
+                    "ruc": "20205572229",
+                    "razon_social": "INDUSTRIAL PESQUERA SANTA MONICA S.A."
+                },
+                {
+                    "ruc": "10703799618",
+                    "razon_social": "GUTIERREZ YUFRA PHAOLA KARLA DEL ROCIO"
+                },
+                {
+                    "ruc": "20508824115",
+                    "razon_social": "CONGELADOS PERUANA DEL PACIFICO SA"
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "10452603913",
+                    "razon_social": "OLIVERA GOMEZ MIRLA INES"
+                },
+                {
+                    "ruc": "10701564842",
+                    "razon_social": "QUISPE SANCHEZ LUZ MARIBEL"
+                },
+                {
+                    "ruc": "20484309613",
+                    "razon_social": "AQUANOVA S.A.C."
+                },
+                {
+                    "ruc": "20606528851",
+                    "razon_social": "QOLLKA FER S.A.C."
+                },
+                {
+                    "ruc": "72515858",
+                    "razon_social": "PORTILLO MAMANI NAYRA NAYELI LUZ"
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "10469204222",
+                    "razon_social": "ZAPATA CARAZAS ELEAZAR"
+                },
+                {
+                    "ruc": "20600581768",
+                    "razon_social": "OCEANO SEAFOOD S.A."
+                },
+                {
+                    "ruc": "20518783611",
+                    "razon_social": "PRODUCTION & EXPORT RAMIREZ SAC"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_010",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Lima",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/08/2026",
+            "fecha_fin": "04/08/2026",
+            "unidades_productivas_count": 31,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20508824115",
+                    "razon_social": "CONGELADOS PERUANA DEL PACIFICO SA"
+                },
+                {
+                    "ruc": "20537864991",
+                    "razon_social": "TOTAL CONSULTING GROUP S.A.C"
+                },
+                {
+                    "ruc": "10703799618",
+                    "razon_social": "GUTIERREZ YUFRA PHAOLA KARLA DEL ROCIO"
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "10424179677",
+                    "razon_social": "GALDOS RAMOS EDER"
+                },
+                {
+                    "ruc": "20609006383",
+                    "razon_social": "XIMA GESTIONES EMPRESARIALES S.A.C."
+                },
+                {
+                    "ruc": "20604295131",
+                    "razon_social": "CITROSWEET MILLS S.A.C."
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                },
+                {
+                    "ruc": "10452603913",
+                    "razon_social": "OLIVERA GOMEZ MIRLA INES"
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "20606528851",
+                    "razon_social": "QOLLKA FER S.A.C."
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "20513632569",
+                    "razon_social": "MARINASOL S.A."
+                },
+                {
+                    "ruc": "20368464024",
+                    "razon_social": "ASOCIACION PESCADORES ARTESANALES CALETA DE VILA VILA Y ANEXOS"
+                },
+                {
+                    "ruc": "20603644591",
+                    "razon_social": "PROCESADORA PESQUERA EL NIRVANA SOCIEDAD ANONIMA CERRADA - PROCESADORA PESQUERA EL NIRVANA S.A.C."
+                },
+                {
+                    "ruc": "20518458036",
+                    "razon_social": "GLOBAL EARTH EIRL"
+                },
+                {
+                    "ruc": "20517355951",
+                    "razon_social": "MEGA PESCA S.A."
+                },
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "10704807827",
+                    "razon_social": "CENTENO GONZALES EDDER AARON"
+                },
+                {
+                    "ruc": "10469204222",
+                    "razon_social": "ZAPATA CARAZAS ELEAZAR"
+                },
+                {
+                    "ruc": "10701564842",
+                    "razon_social": "QUISPE SANCHEZ LUZ MARIBEL"
+                },
+                {
+                    "ruc": "10329789123",
+                    "razon_social": "LUZARDO NUÑEZ JOSE WILBERT"
+                },
+                {
+                    "ruc": "20526349203",
+                    "razon_social": "EMPRESA PESQUERA ACAYSER EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_011",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Tacna",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "04/07/2026",
+            "fecha_fin": "04/07/2026",
+            "unidades_productivas_count": 26,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10452603913",
+                    "razon_social": "OLIVERA GOMEZ MIRLA INES"
+                },
+                {
+                    "ruc": "20517355951",
+                    "razon_social": "MEGA PESCA S.A."
+                },
+                {
+                    "ruc": "20532876622",
+                    "razon_social": "CATARINA MAR S.A.C."
+                },
+                {
+                    "ruc": "20607987042",
+                    "razon_social": "INVERSIONES ACUICOLAS ARICOTA S.R.L."
+                },
+                {
+                    "ruc": "20602721231",
+                    "razon_social": "MARFREEZE S.A.C."
+                },
+                {
+                    "ruc": "10701564842",
+                    "razon_social": "QUISPE SANCHEZ LUZ MARIBEL"
+                },
+                {
+                    "ruc": "20611570211",
+                    "razon_social": "REFRIGERADOS MARINOS E.I.R.L. - REFRIMAR E.I.R.L."
+                },
+                {
+                    "ruc": "20609006383",
+                    "razon_social": "XIMA GESTIONES EMPRESARIALES S.A.C."
+                },
+                {
+                    "ruc": "20603644591",
+                    "razon_social": "PROCESADORA PESQUERA EL NIRVANA SOCIEDAD ANONIMA CERRADA - PROCESADORA PESQUERA EL NIRVANA S.A.C."
+                },
+                {
+                    "ruc": "10740663661",
+                    "razon_social": "ARPASI CRUZ LADY MARLITCHS"
+                },
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "20100114349",
+                    "razon_social": "SGS DEL PERU S.A.C."
+                },
+                {
+                    "ruc": "20537864991",
+                    "razon_social": "TOTAL CONSULTING GROUP S.A.C"
+                },
+                {
+                    "ruc": "20600651880",
+                    "razon_social": "ASOCIACION LAS BRISAS"
+                },
+                {
+                    "ruc": "20508824115",
+                    "razon_social": "CONGELADOS PERUANA DEL PACIFICO SA"
+                },
+                {
+                    "ruc": "20604295131",
+                    "razon_social": "CITROSWEET MILLS S.A.C."
+                },
+                {
+                    "ruc": "20536938657",
+                    "razon_social": "ALTAMAR FOODS PERU S.R.L."
+                },
+                {
+                    "ruc": "20525495079",
+                    "razon_social": "PESQUERA HERMANOS CORDOVA S.A.C."
+                },
+                {
+                    "ruc": "20518458036",
+                    "razon_social": "GLOBAL EARTH EIRL"
+                },
+                {
+                    "ruc": "20611440627",
+                    "razon_social": "CENTRO DE EXCELENCIA EN BIOTECNOLOGIA E INVESTIGACION TRASLACIONAL"
+                },
+                {
+                    "ruc": "10703799618",
+                    "razon_social": "GUTIERREZ YUFRA PHAOLA KARLA DEL ROCIO"
+                },
+                {
+                    "ruc": "10424179677",
+                    "razon_social": "GALDOS RAMOS EDER"
+                },
+                {
+                    "ruc": "10469204222",
+                    "razon_social": "ZAPATA CARAZAS ELEAZAR"
+                },
+                {
+                    "ruc": "10016996110",
+                    "razon_social": "LOPE HUAMANTUCO DAVID"
+                },
+                {
+                    "ruc": "10329789123",
+                    "razon_social": "LUZARDO NUÑEZ JOSE WILBERT"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite14_serv07_012",
+            "cite_ut": "CITEpesquero Ilo",
+            "tipo_serv_accion": "INFORMACION TECNOLOGICA ESPECIALIZADA",
+            "estado": "CONFORME",
+            "region": "Tacna",
+            "horas_efect": 2.0,
+            "cadena_productiva": "Pesquero",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 15,
+            "observaciones_raw": "Cumple todos los criterios aplicables del informe.",
+            "criterios": [
+                {
+                    "criterio": "Estado General",
+                    "detalle": "Cumple todos los criterios de validación.",
+                    "aprobado": true
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20604612064",
+                    "razon_social": "FINFISH AQUACULTURE SOCIEDAD ANONIMA CERRADA - FINFISH S.A.C."
+                },
+                {
+                    "ruc": "20517834255",
+                    "razon_social": "INVERSIONES PRISCO  S.A.C."
+                },
+                {
+                    "ruc": "20101087566",
+                    "razon_social": "BUREAU VERITAS DEL PERU S.A."
+                },
+                {
+                    "ruc": "20277472300",
+                    "razon_social": "MARINE PRODUCTS SERVICE S.A"
+                },
+                {
+                    "ruc": "20609677458",
+                    "razon_social": "PINA GENERAL SERVICE S.A.C"
+                },
+                {
+                    "ruc": "10753890624",
+                    "razon_social": "TINTAYA LARICO GUSTAVO MARTIN"
+                },
+                {
+                    "ruc": "20610609181",
+                    "razon_social": "APA PLAYA CAVERO LA MILAGROSA DE VENTANILLA S.A.C."
+                },
+                {
+                    "ruc": "10729800614",
+                    "razon_social": "HERNANDEZ CHIPANA YELTSIN JOEL"
+                },
+                {
+                    "ruc": "20481873402",
+                    "razon_social": "SEMBRANDO EIRL"
+                },
+                {
+                    "ruc": "20601504481",
+                    "razon_social": "FRIGORIFICO TACNA E.I.R.L."
+                },
+                {
+                    "ruc": "10402235263",
+                    "razon_social": "ALVA CAMPOS LEONARDO ALFREDO"
+                },
+                {
+                    "ruc": "20262895646",
+                    "razon_social": "CASAMAR S.A.C."
+                },
+                {
+                    "ruc": "20486369001",
+                    "razon_social": "PROCESADORA DE ALIMENTOS FALCONI S.A.C."
+                },
+                {
+                    "ruc": "10469204222",
+                    "razon_social": "ZAPATA CARAZAS ELEAZAR"
+                },
+                {
+                    "ruc": "20603644591",
+                    "razon_social": "PROCESADORA PESQUERA EL NIRVANA SOCIEDAD ANONIMA CERRADA - PROCESADORA PESQUERA EL NIRVANA S.A.C."
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite20_serv05_001",
+            "cite_ut": "CITEproductivo San Martín",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "FALTA INFORMACIÓN",
+            "region": "Lima",
+            "horas_efect": 16.0,
+            "cadena_productiva": "Acuícola Pesquera",
+            "fecha_inicio": "04/09/2026",
+            "fecha_fin": "04/10/2026",
+            "unidades_productivas_count": 1,
+            "observaciones_raw": "No se encontró evaluación IA para cite20_serv05_001. Posible error de lectura del PDF.",
+            "criterios": [
+                {
+                    "criterio": "Error de Lectura",
+                    "detalle": "No se encontró evaluación IA para cite20_serv05_001. Posible error de lectura del PDF.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "20304611937",
+                    "razon_social": "FUNDACION CODESPA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite24_serv05_001",
+            "cite_ut": "CITEtextil Camélidos Huancavelica",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "FALTA INFORMACIÓN",
+            "region": "Huancavelica",
+            "horas_efect": 6.0,
+            "cadena_productiva": "Textil",
+            "fecha_inicio": "",
+            "fecha_fin": "",
+            "unidades_productivas_count": 15,
+            "observaciones_raw": "No se encontró evaluación IA para cite24_serv05_001. Posible error de lectura del PDF.",
+            "criterios": [
+                {
+                    "criterio": "Error de Lectura",
+                    "detalle": "No se encontró evaluación IA para cite24_serv05_001. Posible error de lectura del PDF.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10234447331",
+                    "razon_social": "PAQUIYAURI CASTILLO MARCELINA"
+                },
+                {
+                    "ruc": "10722775975",
+                    "razon_social": "SALVATIERRA HUAIRA VANESSA"
+                },
+                {
+                    "ruc": "10800117181",
+                    "razon_social": "LAPA BUENDIA ROSA"
+                },
+                {
+                    "ruc": "10722910333",
+                    "razon_social": "SALVATIERRA HUAYRA MARITZA"
+                },
+                {
+                    "ruc": "10234481067",
+                    "razon_social": "QUIÑA HILARIO GREGORIO"
+                },
+                {
+                    "ruc": "10234448175",
+                    "razon_social": "MUÑOZ DE LA CRUZ ROSA MERY"
+                },
+                {
+                    "ruc": "10438630428",
+                    "razon_social": "GONZALES VARGAS PERCY"
+                },
+                {
+                    "ruc": "10722799882",
+                    "razon_social": "ESPINOZA TAIPE VERONICA"
+                },
+                {
+                    "ruc": "10234703078",
+                    "razon_social": "PAQUIYAURI CASTILLO VICTORIA"
+                },
+                {
+                    "ruc": "10417158206",
+                    "razon_social": "QUISPE JANAMPA DELIA"
+                },
+                {
+                    "ruc": "10425780561",
+                    "razon_social": "APARCO INGA HONORATA"
+                },
+                {
+                    "ruc": "10234663718",
+                    "razon_social": "ÑAVINCOPA OCHOA FAUSTINO"
+                },
+                {
+                    "ruc": "10234711836",
+                    "razon_social": "JANAMPA QUISPE YOLANDA"
+                },
+                {
+                    "ruc": "10433553441",
+                    "razon_social": "BENDEZU OCAS GUADALUPE"
+                },
+                {
+                    "ruc": "10456467488",
+                    "razon_social": "MARTINEZ TAIPE MARILINA"
+                }
+            ]
+        },
+        {
+            "cod_informe": "cite25_serv005_001",
+            "cite_ut": "CITEtextil Camélidos Puno",
+            "tipo_serv_accion": "CAPACITACIÓN",
+            "estado": "FALTA INFORMACIÓN",
+            "region": "Puno",
+            "horas_efect": 20.0,
+            "cadena_productiva": "Textil",
+            "fecha_inicio": "04/08/2026",
+            "fecha_fin": "04/10/2026",
+            "unidades_productivas_count": 18,
+            "observaciones_raw": "No se encontró evaluación IA para cite25_serv005_001. Posible error de lectura del PDF.",
+            "criterios": [
+                {
+                    "criterio": "Error de Lectura",
+                    "detalle": "No se encontró evaluación IA para cite25_serv005_001. Posible error de lectura del PDF.",
+                    "aprobado": false
+                }
+            ],
+            "empresas": [
+                {
+                    "ruc": "10455053710",
+                    "razon_social": "CHIRA FLORES MAURA"
+                },
+                {
+                    "ruc": "10746501876",
+                    "razon_social": "PARIONA ARTEAGA ANGUILETH EDITH"
+                },
+                {
+                    "ruc": "10101998725",
+                    "razon_social": "DAMIAN LAZO ELVIRA AMANDA"
+                },
+                {
+                    "ruc": "10403862849",
+                    "razon_social": "BARRIOS TAMAYO EYLEN PAOLA"
+                },
+                {
+                    "ruc": "10455657232",
+                    "razon_social": "RAVINES HERMOZA ANDREA MARIA"
+                },
+                {
+                    "ruc": "10013174402",
+                    "razon_social": "CCAMAPAZA AGUILAR MERY VILMA"
+                },
+                {
+                    "ruc": "10013180968",
+                    "razon_social": "MAMANI QUIÑONEZ JULIA"
+                },
+                {
+                    "ruc": "10013010434",
+                    "razon_social": "SALAS QUISPE HULDA SALOME"
+                },
+                {
+                    "ruc": "10457704556",
+                    "razon_social": "MAMANI ARAPA FALIYONY GERMAN"
+                },
+                {
+                    "ruc": "10411442743",
+                    "razon_social": "QUISPE HUARACHA MARIVEL RIDWAN"
+                },
+                {
+                    "ruc": "10485988284",
+                    "razon_social": "MARAVI TORALVA LUDWIG KENELY"
+                },
+                {
+                    "ruc": "10439866476",
+                    "razon_social": "MATAMOROS MONTAÑEZ JUDITH MARLENY"
+                },
+                {
+                    "ruc": "10806159811",
+                    "razon_social": "HUAMAN ZEA SONIA PRISCA"
+                },
+                {
+                    "ruc": "10022894558",
+                    "razon_social": "HUANACO QUISPE JUANA JUSTINA"
+                },
+                {
+                    "ruc": "10475038202",
+                    "razon_social": "LOPEZ CHIRE MONICA CYNTHIA"
+                },
+                {
+                    "ruc": "75670784",
+                    "razon_social": "JULI YUCRA YANET MERY"
+                },
+                {
+                    "ruc": "10420696715",
+                    "razon_social": "GONZALES TIPO VIRGINIA"
+                },
+                {
+                    "ruc": "10733685102",
+                    "razon_social": "ANCCASI FLORES DILMA"
+                }
+            ]
+        }
+    ]
+}

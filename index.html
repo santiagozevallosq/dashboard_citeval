@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITEVAL - Centro de Control IA Premium</title>
+    <!-- Google Fonts: Outfit (modern/futuristic) & JetBrains Mono (for terminal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fondos Orgánicos Animados -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- ================================================================= -->
+    <!-- 1. SIMULADOR DE PIPELINE INTERACTIVO (PANTALLA DE INICIO) -->
+    <!-- ================================================================= -->
+    <div id="simulador-screen" class="simulador-container" style="justify-content: space-between; overflow: hidden; height: 100vh;">
+        
+        <!-- Área de Contenido Principal -->
+        <div class="simulador-content-scroll" style="display: flex; align-items: center; justify-content: center; height: calc(100vh - 40px); padding: 20px 0;">
+            <div class="simulador-main-layout" style="max-width: 1050px; width: 100%; display: flex; flex-direction: column; gap: 16px;">
+                
+                <!-- 2. Bloque principal superior: presentación ejecutiva -->
+                <section class="executive-intro-section glass-panel" style="padding: 16px 32px; margin-top: 5px;">
+                    <h1 class="simulador-main-heading" style="font-size: 28px;">AGENTE DE IA <span class="text-crimson">CITEVAL</span></h1>
+                    <p class="simulador-description-text" style="margin-bottom: 12px; font-size: 13px;">
+                        Agente de IA que asiste la prevalidación de los servicios tecnológicos registrados en SSIPRO, verificando la consistencia de la información declarada, las reglas de validación y los medios de verificación disponibles.
+                    </p>
+                    
+                    <div class="chips-container">
+                        <div class="impact-chip">
+                            <i data-lucide="clock" class="chip-icon text-blue"></i>
+                            <span class="chip-label">Menor carga manual</span>
+                        </div>
+                        <div class="impact-chip">
+                            <i data-lucide="eye" class="chip-icon text-purple"></i>
+                            <span class="chip-label">Mayor trazabilidad</span>
+                        </div>
+                        <div class="impact-chip">
+                            <i data-lucide="bell" class="chip-icon text-red"></i>
+                            <span class="chip-label">Alertas tempranas</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. Bloque de flujo del agente -->
+                <section class="agent-flow-section">
+                    <h3 class="section-title-exec" style="margin-bottom: 8px;">¿Cómo trabaja el agente?</h3>
+                    <div class="flow-steps-grid">
+                        <div class="flow-step-card glass-panel" style="min-height: 120px; padding: 10px;">
+                            <div class="step-num">01</div>
+                            <div class="step-icon-wrapper" style="width: 28px; height: 28px;"><i data-lucide="upload-cloud" style="width: 14px; height: 14px;"></i></div>
+                            <h4 style="font-size: 11px; margin-top: 4px;">Carga de información</h4>
+                            <p style="font-size: 9.5px;">Registros SSIPRO y medios de verificación.</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i data-lucide="chevron-right"></i>
+                        </div>
+                        
+                        <div class="flow-step-card glass-panel" style="min-height: 120px; padding: 10px;">
+                            <div class="step-num">02</div>
+                            <div class="step-icon-wrapper" style="width: 28px; height: 28px;"><i data-lucide="list-checks" style="width: 14px; height: 14px;"></i></div>
+                            <h4 style="font-size: 11px; margin-top: 4px;">Aplicación de reglas</h4>
+                            <p style="font-size: 9.5px;">Reglas transversales y checklist de validación.</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i data-lucide="chevron-right"></i>
+                        </div>
+                        
+                        <div class="flow-step-card glass-panel" style="min-height: 120px; padding: 10px;">
+                            <div class="step-num">03</div>
+                            <div class="step-icon-wrapper" style="width: 28px; height: 28px;"><i data-lucide="cpu" style="width: 14px; height: 14px;"></i></div>
+                            <h4 style="font-size: 11px; margin-top: 4px;">Análisis semántico IA</h4>
+                            <p style="font-size: 9.5px;">Contrasta información declarada, criterios y evidencias.</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i data-lucide="chevron-right"></i>
+                        </div>
+                        
+                        <div class="flow-step-card glass-panel" style="min-height: 120px; padding: 10px;">
+                            <div class="step-num">04</div>
+                            <div class="step-icon-wrapper" style="width: 28px; height: 28px;"><i data-lucide="alert-triangle" style="width: 14px; height: 14px;"></i></div>
+                            <h4 style="font-size: 11px; margin-top: 4px;">Clasificación del servicio</h4>
+                            <p style="font-size: 9.5px;">Conforme | Observado | Falta información.</p>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <i data-lucide="chevron-right"></i>
+                        </div>
+                        
+                        <div class="flow-step-card glass-panel" style="min-height: 120px; padding: 10px;">
+                            <div class="step-num">05</div>
+                            <div class="step-icon-wrapper" style="width: 28px; height: 28px;"><i data-lucide="layout-dashboard" style="width: 14px; height: 14px;"></i></div>
+                            <h4 style="font-size: 11px; margin-top: 4px;">Dashboard de resultados</h4>
+                            <p style="font-size: 9.5px;">Indicadores, alertas y detalle por servicio.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. Terminal interactiva -->
+                <section class="interactive-terminal-section">
+                    <div class="glass-panel terminal-window" style="max-width: 100%;">
+                        <div class="terminal-header" style="padding: 8px 16px;">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-space"></div>
+                        </div>
+                        
+                        <div class="terminal-body" style="padding: 14px;">
+                            <div class="terminal-console" id="console-logs" style="min-height: 110px; max-height: 130px; font-size: 12px; gap: 4px;">
+                                <div class="console-line system"><span class="prompt">></span> Iniciando núcleo de prevalidación CITEVAL IA...</div>
+                                <div class="console-line system"><span class="prompt">></span> Cargando registros de servicios desde SSIPRO...</div>
+                                <div class="console-line system"><span class="prompt">></span> Verificando reglas transversales y checklist de validación...</div>
+                                <div class="console-line system"><span class="prompt">></span> Preparando análisis semántico con IA...</div>
+                                <div class="console-line warning"><span class="prompt">></span> ESTADO: Esperando comando de ejecución del operador.</div>
+                            </div>
+
+                            <!-- Barra de Progreso Simulada -->
+                            <div class="progress-container" id="progress-bar-wrapper" style="display: none; margin-top: 10px;">
+                                <div class="progress-header">
+                                    <span id="progress-step-text">Procesando datos...</span>
+                                    <span id="progress-percentage">0%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Botón principal -->
+                <section class="main-action-section" style="display: flex; justify-content: center; margin-top: 4px;">
+                    <button class="btn btn-primary btn-glow btn-exec-landing" id="btn-iniciar-auditoria">
+                        <i data-lucide="play-circle" class="btn-exec-icon"></i>
+                        INICIAR PREVALIDACIÓN INTELIGENTE
+                    </button>
+                </section>
+
+            </div>
+        </div>
+        
+        <!-- 7. Pie institucional -->
+        <footer class="simulador-footer-exec" style="padding: 8px 40px; background-color: #ffffff;">
+            <p>Elaborado por el consultor Santiago Zevallos</p>
+        </footer>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 2. DASHBOARD DE ALTO IMPACTO (CENTRO DE CONTROL ACTIVO) -->
+    <!-- ================================================================= -->
+    <div id="dashboard-screen" class="dashboard-container" style="display: none;">
+        
+        <!-- Cabecera -->
+        <header class="dashboard-header">
+            <div class="header-info">
+                <div class="header-logo-container">
+                    <img src="https://www.gob.pe/images/instituciones/itp.png" alt="Logo ITP" class="logo-itp">
+                    <div class="logo-divider"></div>
+                    <div class="logo-badge">IA AUDITOR</div>
+                </div>
+                <h1>Panel de control Agente de IA CITEVAL <span class="badge-fase">Fase 1</span></h1>
+                <p>Resultados de la prevalidación de servicios tecnológicos de la Red CITE del ITP basados en el Agente de IA</p>
+            </div>
+            
+            <div class="header-actions">
+                <button class="btn btn-secondary" id="btn-re-simular">
+                    <i data-lucide="refresh-cw"></i>
+                    VOLVER A INICIAR
+                </button>
+                <div class="clock-panel">
+                     <i data-lucide="calendar"></i>
+                    <span id="fecha-actual">Cargando...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenedor Cuerpo del Dashboard con Barra Lateral -->
+        <div class="dashboard-body-layout">
+            
+            <!-- Barra Lateral de Filtros (Sidebar) -->
+            <aside class="dashboard-sidebar glass-panel">
+                <div class="sidebar-header">
+                    <h2><i data-lucide="sliders-horizontal"></i> Filtros de Control</h2>
+                </div>
+                
+                <div class="sidebar-filters">
+                    <!-- Búsqueda Textual -->
+                    <div class="filter-group">
+                        <label for="search-input"><i data-lucide="search"></i> Buscar</label>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Código, RUC, CITE o Razón Social...">
+                        </div>
+                    </div>
+
+                    <!-- Rango de Fechas -->
+                    <div class="filter-group">
+                        <label for="filter-fecha-inicio"><i data-lucide="calendar"></i> Fecha Inicio</label>
+                        <input type="date" id="filter-fecha-inicio">
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filter-fecha-fin"><i data-lucide="calendar"></i> Fecha Fin</label>
+                        <input type="date" id="filter-fecha-fin">
+                    </div>
+
+                    <!-- Combobox CITE -->
+                    <div class="filter-group">
+                        <label for="filter-cite"><i data-lucide="building"></i> CITE / Unidad</label>
+                        <select id="filter-cite">
+                            <option value="Todos">Todos los CITEs</option>
+                        </select>
+                    </div>
+
+                    <!-- Combobox Estado -->
+                    <div class="filter-group">
+                        <label for="filter-estado"><i data-lucide="shield-alert"></i> Prevalidación IA</label>
+                        <select id="filter-estado">
+                            <option value="Todos">Todos los Estados</option>
+                            <option value="CONFORME">CONFORME</option>
+                            <option value="OBSERVADO">OBSERVADO</option>
+                            <option value="FALTA INFORMACIÓN">FALTA INFORMACIÓN</option>
+                        </select>
+                    </div>
+
+                    <!-- Combobox Región -->
+                    <div class="filter-group">
+                        <label for="filter-region"><i data-lucide="map-pin"></i> Región</label>
+                        <select id="filter-region">
+                            <option value="Todos">Todas las Regiones</option>
+                        </select>
+                    </div>
+
+                    <!-- Combobox Cadena Productiva -->
+                    <div class="filter-group">
+                        <label for="filter-cadena"><i data-lucide="boxes"></i> Cadena Productiva</label>
+                        <select id="filter-cadena">
+                            <option value="Todos">Todas las Cadenas</option>
+                        </select>
+                    </div>
+
+                    <!-- Combobox Tipo de Servicio -->
+                    <div class="filter-group">
+                        <label for="filter-tipo-servicio"><i data-lucide="wrench"></i> Tipo de Servicio</label>
+                        <select id="filter-tipo-servicio">
+                            <option value="Todos">Todos los Servicios</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-secondary w-full" id="btn-limpiar-filtros" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                        <i data-lucide="filter-x"></i> Limpiar Filtros
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Panel de Contenido Principal -->
+            <main class="dashboard-main-content">
+                
+                <!-- BLOQUE 1: INDICADORES GENERALES (KPI Cards) -->
+                <section class="kpi-grid">
+                    <div class="glass-panel kpi-card">
+                        <div class="kpi-icon icon-blue">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Total Servicios</h3>
+                            <div class="kpi-value" id="kpi-total-servicios">0</div>
+                            <p class="kpi-subtext">Servicios evaluados</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel kpi-card">
+                        <div class="kpi-icon icon-purple">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Evaluados por IA</h3>
+                            <div class="kpi-value" id="kpi-evaluados-ia">0</div>
+                            <p class="kpi-subtext" id="kpi-evaluados-pct">0.0% de servicios</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel kpi-card" id="kpi-conforme-card">
+                        <div class="kpi-icon icon-green">
+                            <i data-lucide="check-circle2"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Conformes</h3>
+                            <div class="kpi-value" id="kpi-conformes-num">0</div>
+                            <p class="kpi-subtext" id="kpi-conformes-pct">0.0% de servicios</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel kpi-card" id="kpi-observado-card">
+                        <div class="kpi-icon icon-yellow">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Observados</h3>
+                            <div class="kpi-value" id="kpi-observados-num">0</div>
+                            <p class="kpi-subtext" id="kpi-observados-pct">0.0% de servicios</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel kpi-card" id="kpi-falta-info-card">
+                        <div class="kpi-icon icon-coral">
+                            <i data-lucide="x-circle"></i>
+                        </div>
+                        <div class="kpi-content">
+                            <h3>Falta Información</h3>
+                            <div class="kpi-value" id="kpi-falta-info-num">0</div>
+                            <p class="kpi-subtext" id="kpi-falta-info-pct">0.0% de servicios</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- BLOQUE 2: RESULTADOS DE VALIDACIÓN (2 Columnas) -->
+                <div class="dashboard-row grid-2-col">
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="bar-chart-2"></i> Resultado por Estado de Prevalidación</h2>
+                            <span class="helper-tooltip" title="Gráfico de barras que representa el resultado de prevalidación IA.">
+                                <i data-lucide="info"></i>
+                            </span>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-prevalidacion-bar"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="wrench"></i> Resultado por tipo de servicio</h2>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-servicio-validation"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE 3: GRÁFICOS DE SEGMENTACIÓN -->
+                <div class="dashboard-row grid-2x2-col">
+                    <!-- Validación por CITE -->
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="building"></i> Resultado por CITE</h2>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-cite-validation"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Validación por Región -->
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="map"></i> Resultado por región</h2>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-region-validation"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Validación por Cadena Productiva -->
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="git-branch"></i> Resultado por cadena productiva</h2>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-cadena-validation"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Tipo de observaciones específicas a cada servicio -->
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="list-checks"></i> Tipo de observaciones específicas a cada servicio</h2>
+                            <span class="helper-tooltip" title="Reglas del checklist falladas con mayor frecuencia por la IA.">
+                                <i data-lucide="info"></i>
+                            </span>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-checklist-summary"></canvas>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE 4: TABLA DETALLADA -->
+                <div class="dashboard-row">
+                    <div class="glass-panel inbox-card">
+                        <div class="card-header border-bottom">
+                            <div class="inbox-header-title">
+                                <h2><i data-lucide="inbox"></i> Resultados por servicios</h2>
+                                <p class="inbox-subtitle">Mostrando <span id="filtered-count">0</span> de <span id="total-count">0</span> servicios</p>
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="premium-table">
+                                <thead>
+                                    <tr>
+                                        <th>Cód. Informe</th>
+                                        <th>CITE / Unidad Ejecutora</th>
+                                        <th>Razón Social / RUC</th>
+                                        <th>Cadena Productiva</th>
+                                        <th>Tipo de Servicio</th>
+                                        <th>Región</th>
+                                        <th class="text-center">Estado Final</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="inbox-table-body">
+                                    <!-- Se poblará dinámicamente -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Paginación de la Tabla -->
+                        <div class="table-pagination">
+                            <button class="btn btn-secondary btn-sm" id="btn-prev-page">
+                                <i data-lucide="chevron-left"></i> Anterior
+                            </button>
+                            <span id="page-indicator">Página 1 de 1</span>
+                            <button class="btn btn-secondary btn-sm" id="btn-next-page">
+                                Siguiente <i data-lucide="chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- 3. DETALLE DE AUDITORÍA: CAJÓN LATERAL DESPLIZABLE (DRAWER) -->
+    <!-- ================================================================= -->
+    <div id="audit-drawer" class="drawer-container">
+        <div class="drawer-overlay" id="drawer-close-overlay"></div>
+        <div class="drawer-content">
+            <!-- Cabecera del Cajón -->
+            <div class="drawer-header">
+                <div class="drawer-title-area">
+                    <span class="drawer-badge-estado" id="drawer-estado-badge">OBSERVADO</span>
+                    <h2 id="drawer-titulo-informe">cite03_serv05_002</h2>
+                    <p class="drawer-subtitle" id="drawer-cite-nombre">CITEagroindustrial Huallaga</p>
+                </div>
+                <button class="btn-close-drawer" id="btn-close-drawer">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <!-- Tabs del Cajón -->
+            <div class="drawer-tabs">
+                <button class="tab-btn active" data-tab="tab-ficha">
+                    <i data-lucide="file-bar-chart"></i> Ficha Técnica
+                </button>
+                <button class="tab-btn" data-tab="tab-ia">
+                    <i data-lucide="cpu"></i> Veredicto de IA
+                </button>
+                <button class="tab-btn" data-tab="tab-empresas">
+                    <i data-lucide="building-2"></i> Empresas (<span id="drawer-empresas-count">0</span>)
+                </button>
+            </div>
+
+            <!-- Cuerpo del Cajón (Contenedor con Scroll) -->
+            <div class="drawer-body">
+                
+                <!-- TAB 1: FICHA TÉCNICA -->
+                <div class="tab-content active" id="tab-ficha">
+                    <div class="meta-section">
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="tag"></i> Tipo de Servicio</span>
+                            <span class="meta-value text-glow" id="drawer-ficha-tipo-servicio">Capacitación</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="map-pin"></i> Región</span>
+                            <span class="meta-value" id="drawer-ficha-region">Huánuco</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="clock"></i> Horas Efectivas</span>
+                            <span class="meta-value" id="drawer-ficha-horas">16.0 hrs</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="calendar"></i> Período</span>
+                            <span class="meta-value" id="drawer-ficha-periodo">15/04/2026 - 18/04/2026</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="layers"></i> Cadena Productiva</span>
+                            <span class="meta-value" id="drawer-ficha-cadena">Cacao</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-label"><i data-lucide="database"></i> Impacto SSIPRO</span>
+                            <span class="meta-value" id="drawer-ficha-unidades">15 Unidades Productivas</span>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de Control Interno -->
+                    <div class="glass-panel drawer-alert-box info">
+                        <div class="alert-icon"><i data-lucide="check-square"></i></div>
+                        <div class="alert-message">
+                            <h4>Controles de Entrada Completados</h4>
+                            <p>Se confirmó la existencia física de Informe Técnico en PDF, Conformidad del Cliente y Declaración Jurada para este expediente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 2: VEREDICTO DE IA (CHECKLIST DETALLADO) -->
+                <div class="tab-content" id="tab-ia">
+                    <div class="ia-report-header">
+                        <div class="ia-robot-avatar">
+                            <i data-lucide="bot"></i>
+                        </div>
+                        <div>
+                            <h4>Agente de Pre-validación IA</h4>
+                            <p class="caption text-glow">Modelo: Gemini 1.5 Pro | Pipeline V1</p>
+                        </div>
+                    </div>
+
+                    <h4 class="section-title">Evaluación de Criterios Semánticos</h4>
+                    <div class="ia-checklist" id="drawer-ia-checklist">
+                        <!-- Poblado dinámicamente -->
+                    </div>
+
+                    <!-- Recomendación General -->
+                    <div class="glass-panel recommendation-panel" id="drawer-recommendation-box">
+                        <h4>Recomendación de Acción:</h4>
+                        <p id="drawer-recommendation-text">El informe requiere ser devuelto al CITE origen para subsanar los criterios observados antes de proceder con el registro presupuestal.</p>
+                    </div>
+                </div>
+
+                <!-- TAB 3: EMPRESAS ASOCIADAS -->
+                <div class="tab-content" id="tab-empresas">
+                    <p class="tab-description">Unidades productivas beneficiarias declaradas en SSIPRO asociadas a este informe técnico:</p>
+                    <div class="companies-list" id="drawer-companies-list">
+                        <!-- Poblado dinámicamente -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de la Aplicación -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
