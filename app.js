@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------
     let dashboardData = null;
     let filteredInformes = [];
+    let todasRegistros = [];
     let filteredRegistros = []; // Declaración global para paginación consistente
     let currentSelectedInforme = null;
     let currentTab = 'tab-ficha';
@@ -55,6 +56,45 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             dashboardData = await respuesta.json();
             filteredInformes = [...dashboardData.informes];
+            
+            // Construir lista plana maestra de todos los registros de servicios
+            todasRegistros = [];
+            dashboardData.informes.forEach(inf => {
+                if (inf.empresas && inf.empresas.length > 0) {
+                    inf.empresas.forEach(emp => {
+                        todasRegistros.push({
+                            cod_informe: inf.cod_informe,
+                            cite_ut: inf.cite_ut,
+                            cadena_productiva: inf.cadena_productiva,
+                            tipo_serv_accion: inf.tipo_serv_accion,
+                            region: inf.region,
+                            estado: emp.estado || inf.estado,
+                            ruc: emp.ruc,
+                            razon_social: emp.razon_social,
+                            obs_trans: emp.observacion_transversales || '',
+                            obs_check: emp.observacion_checklist || '',
+                            fecha_inicio: inf.fecha_inicio,
+                            fecha_fin: inf.fecha_fin
+                        });
+                    });
+                } else {
+                    todasRegistros.push({
+                        cod_informe: inf.cod_informe,
+                        cite_ut: inf.cite_ut,
+                        cadena_productiva: inf.cadena_productiva,
+                        tipo_serv_accion: inf.tipo_serv_accion,
+                        region: inf.region,
+                        estado: inf.estado,
+                        ruc: 'N/A',
+                        razon_social: 'No especificado',
+                        obs_trans: '',
+                        obs_check: '',
+                        fecha_inicio: inf.fecha_inicio,
+                        fecha_fin: inf.fecha_fin
+                    });
+                }
+            });
+            filteredRegistros = [...todasRegistros];
             
             // Población inicial de filtros una vez cargado
             poblarFiltros();
@@ -276,24 +316,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateEnd = dateEndStr ? new Date(dateEndStr) : null;
         if (dateEnd) dateEnd.setHours(23,59,59,999);
 
-        filteredInformes = dashboardData.informes.filter(inf => {
-            // Filtro de búsqueda textual (código de informe, CITE, Región, RUC, Razón Social)
+        filteredRegistros = todasRegistros.filter(reg => {
+            // Filtro de búsqueda textual seguro y robusto
             let matchTexto = true;
             if (busqueda !== '') {
-                const matchCodigo = inf.cod_informe.toLowerCase().includes(busqueda);
-                const matchCiteStr = inf.cite_ut.toLowerCase().includes(busqueda);
-                const matchRegionStr = inf.region.toLowerCase().includes(busqueda);
-                const matchCadenaStr = inf.cadena_productiva ? inf.cadena_productiva.toLowerCase().includes(busqueda) : false;
-                const matchEmpresa = inf.empresas.some(emp => 
-                    emp.ruc.includes(busqueda) || emp.razon_social.toLowerCase().includes(busqueda)
-                );
-                matchTexto = matchCodigo || matchCiteStr || matchRegionStr || matchCadenaStr || matchEmpresa;
+                const matchCodigo = reg.cod_informe ? String(reg.cod_informe).toLowerCase().includes(busqueda) : false;
+                const matchCiteStr = reg.cite_ut ? String(reg.cite_ut).toLowerCase().includes(busqueda) : false;
+                const matchRegionStr = reg.region ? String(reg.region).toLowerCase().includes(busqueda) : false;
+                const matchCadenaStr = reg.cadena_productiva ? String(reg.cadena_productiva).toLowerCase().includes(busqueda) : false;
+                const matchRuc = reg.ruc ? String(reg.ruc).includes(busqueda) : false;
+                const matchRazon = reg.razon_social ? String(reg.razon_social).toLowerCase().includes(busqueda) : false;
+                matchTexto = matchCodigo || matchCiteStr || matchRegionStr || matchCadenaStr || matchRuc || matchRazon;
             }
 
             // Filtro por Fechas
             let matchFecha = true;
             if (dateStart || dateEnd) {
-                const infDate = parseDate(inf.fecha_inicio);
+                const infDate = parseDate(reg.fecha_inicio);
                 if (infDate) {
                     if (dateStart && infDate < dateStart) matchFecha = false;
                     if (dateEnd && infDate > dateEnd) matchFecha = false;
@@ -302,15 +341,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // Filtros de combos
-            const matchCite = (citeSelect === 'Todos' || inf.cite_ut === citeSelect);
-            const matchEstado = (estadoSelect === 'Todos' || inf.estado === estadoSelect);
-            const matchRegion = (regionSelect === 'Todos' || inf.region === regionSelect);
-            const matchCadena = (cadenaSelect === 'Todos' || inf.cadena_productiva === cadenaSelect);
-            const matchServicio = (servicioSelect === 'Todos' || inf.tipo_serv_accion === servicioSelect);
+            // Filtros de combos robustos (inmunes a casing, espacios y acentos)
+            const matchCite = (citeSelect === 'Todos' || (reg.cite_ut && String(reg.cite_ut).toUpperCase().trim() === citeSelect.toUpperCase().trim()));
+            const matchEstado = (estadoSelect === 'Todos' || (reg.estado && String(reg.estado).toUpperCase().trim() === estadoSelect.toUpperCase().trim()));
+            const matchRegion = (regionSelect === 'Todos' || (reg.region && String(reg.region).toUpperCase().trim() === regionSelect.toUpperCase().trim()));
+            const matchCadena = (cadenaSelect === 'Todos' || (reg.cadena_productiva && String(reg.cadena_productiva).toUpperCase().trim() === cadenaSelect.toUpperCase().trim()));
+            const matchServicio = (servicioSelect === 'Todos' || (reg.tipo_serv_accion && String(reg.tipo_serv_accion).toUpperCase().trim() === servicioSelect.toUpperCase().trim()));
 
             return matchTexto && matchFecha && matchCite && matchEstado && matchRegion && matchCadena && matchServicio;
         });
+
+        // Filtrar también los informes para mantener la consistencia con el gráfico de checklist
+        const codigosInformesFiltrados = new Set(filteredRegistros.map(r => r.cod_informe));
+        filteredInformes = dashboardData.informes.filter(inf => codigosInformesFiltrados.has(inf.cod_informe));
 
         // Al cambiar filtros, resetear a página 1
         currentPage = 1;
@@ -370,40 +413,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderizarTodo = () => {
         if (!dashboardData) return;
 
-        // Expandir informes filtrados a registros individuales (servicios a unidades productivas) de forma global
-        filteredRegistros = [];
-        filteredInformes.forEach(inf => {
-            if (inf.empresas && inf.empresas.length > 0) {
-                inf.empresas.forEach(emp => {
-                    filteredRegistros.push({
-                        cod_informe: inf.cod_informe,
-                        cite_ut: inf.cite_ut,
-                        cadena_productiva: inf.cadena_productiva,
-                        tipo_serv_accion: inf.tipo_serv_accion,
-                        region: inf.region,
-                        estado: inf.estado,
-                        ruc: emp.ruc,
-                        razon_social: emp.razon_social,
-                        obs_trans: emp.observacion_transversales || '',
-                        obs_check: emp.observacion_checklist || ''
-                    });
-                });
-            } else {
-                filteredRegistros.push({
-                    cod_informe: inf.cod_informe,
-                    cite_ut: inf.cite_ut,
-                    cadena_productiva: inf.cadena_productiva,
-                    tipo_serv_accion: inf.tipo_serv_accion,
-                    region: inf.region,
-                    estado: inf.estado,
-                    ruc: 'N/A',
-                    razon_social: 'No especificado',
-                    obs_trans: '',
-                    obs_check: ''
-                });
-            }
-        });
-
         renderizarKPIs();
         renderizarGraficoPrevalidacion();
         renderizarGraficoChecklist();
@@ -415,10 +424,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. KPIs Globales (5 Tarjetas Solicitadas) basados en el número de Servicios
     const renderizarKPIs = () => {
-        const total = filteredInformes.reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
-        const conforme = filteredInformes.filter(inf => inf.estado === 'CONFORME').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
-        const observado = filteredInformes.filter(inf => inf.estado === 'OBSERVADO').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
-        const faltaInfo = filteredInformes.filter(inf => inf.estado === 'FALTA INFORMACIÓN').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
+        const total = filteredRegistros.length;
+        const conforme = filteredRegistros.filter(reg => reg.estado === 'CONFORME').length;
+        const observado = filteredRegistros.filter(reg => reg.estado === 'OBSERVADO').length;
+        const faltaInfo = filteredRegistros.filter(reg => reg.estado === 'FALTA INFORMACIÓN').length;
 
         const pConf = total > 0 ? ((conforme / total) * 100).toFixed(1) : "0.0";
         const pObs = total > 0 ? ((observado / total) * 100).toFixed(1) : "0.0";
@@ -440,9 +449,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Gráficos de Bloque 2 (Resultado de Validación) basados en el número de Servicios
     const renderizarGraficoPrevalidacion = () => {
-        const conforme = filteredInformes.filter(inf => inf.estado === 'CONFORME').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
-        const observado = filteredInformes.filter(inf => inf.estado === 'OBSERVADO').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
-        const faltaInfo = filteredInformes.filter(inf => inf.estado === 'FALTA INFORMACIÓN').reduce((acc, inf) => acc + inf.unidades_productivas_count, 0);
+        const conforme = filteredRegistros.filter(reg => reg.estado === 'CONFORME').length;
+        const observado = filteredRegistros.filter(reg => reg.estado === 'OBSERVADO').length;
+        const faltaInfo = filteredRegistros.filter(reg => reg.estado === 'FALTA INFORMACIÓN').length;
 
         const canvas = document.getElementById('chart-prevalidacion-bar');
         if (!canvas) return;
@@ -621,12 +630,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const renderizarGraficosSegmentacion = () => {
         // --- 3.1 VALIDACIÓN POR CITE ---
         const citeMap = {};
-        filteredInformes.forEach(inf => {
-            if (!citeMap[inf.cite_ut]) {
-                citeMap[inf.cite_ut] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
+        filteredRegistros.forEach(reg => {
+            if (!citeMap[reg.cite_ut]) {
+                citeMap[reg.cite_ut] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
             }
-            citeMap[inf.cite_ut][inf.estado] += inf.unidades_productivas_count;
-            citeMap[inf.cite_ut].total += inf.unidades_productivas_count;
+            citeMap[reg.cite_ut][reg.estado]++;
+            citeMap[reg.cite_ut].total++;
         });
 
         const topCites = Object.keys(citeMap)
@@ -685,12 +694,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- 3.2 VALIDACIÓN POR REGIÓN ---
         const regionMap = {};
-        filteredInformes.forEach(inf => {
-            if (!regionMap[inf.region]) {
-                regionMap[inf.region] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
+        filteredRegistros.forEach(reg => {
+            if (!regionMap[reg.region]) {
+                regionMap[reg.region] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
             }
-            regionMap[inf.region][inf.estado] += inf.unidades_productivas_count;
-            regionMap[inf.region].total += inf.unidades_productivas_count;
+            regionMap[reg.region][reg.estado]++;
+            regionMap[reg.region].total++;
         });
 
         const topRegiones = Object.keys(regionMap)
@@ -733,13 +742,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- 3.3 VALIDACIÓN POR CADENA PRODUCTIVA ---
         const cadenaMap = {};
-        filteredInformes.forEach(inf => {
-            const cad = inf.cadena_productiva || 'No especificado';
+        filteredRegistros.forEach(reg => {
+            const cad = reg.cadena_productiva || 'No especificado';
             if (!cadenaMap[cad]) {
                 cadenaMap[cad] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
             }
-            cadenaMap[cad][inf.estado] += inf.unidades_productivas_count;
-            cadenaMap[cad].total += inf.unidades_productivas_count;
+            cadenaMap[cad][reg.estado]++;
+            cadenaMap[cad].total++;
         });
 
         const topCadenas = Object.keys(cadenaMap)
@@ -782,13 +791,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- 3.4 VALIDACIÓN POR TIPO DE SERVICIO ---
         const servicioMap = {};
-        filteredInformes.forEach(inf => {
-            const serv = inf.tipo_serv_accion || 'No especificado';
+        filteredRegistros.forEach(reg => {
+            const serv = reg.tipo_serv_accion || 'No especificado';
             if (!servicioMap[serv]) {
                 servicioMap[serv] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
             }
-            servicioMap[serv][inf.estado] += inf.unidades_productivas_count;
-            servicioMap[serv].total += inf.unidades_productivas_count;
+            servicioMap[serv][reg.estado]++;
+            servicioMap[serv].total++;
         });
 
         const topServicios = Object.keys(servicioMap)
@@ -1065,6 +1074,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnCloseDrawer) btnCloseDrawer.addEventListener('click', cerrarDrawerAuditoria);
     if (drawerOverlay) drawerOverlay.addEventListener('click', cerrarDrawerAuditoria);
+
 
     // Lógica para cambiar de Tabs en el Drawer
     const activarTab = (tabId) => {
