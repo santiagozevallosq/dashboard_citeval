@@ -383,7 +383,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         region: inf.region,
                         estado: inf.estado,
                         ruc: emp.ruc,
-                        razon_social: emp.razon_social
+                        razon_social: emp.razon_social,
+                        obs_trans: emp.observacion_transversales || '',
+                        obs_check: emp.observacion_checklist || ''
                     });
                 });
             } else {
@@ -395,7 +397,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     region: inf.region,
                     estado: inf.estado,
                     ruc: 'N/A',
-                    razon_social: 'No especificado'
+                    razon_social: 'No especificado',
+                    obs_trans: '',
+                    obs_check: ''
                 });
             }
         });
@@ -879,6 +883,26 @@ document.addEventListener('DOMContentLoaded', () => {
             if (reg.estado === 'OBSERVADO') badgeClass = 'observado';
             else if (reg.estado === 'FALTA INFORMACIÓN') badgeClass = 'falta-info';
 
+            // Observaciones Generales
+            let cleanObsTrans = reg.obs_trans || '';
+            if (cleanObsTrans.includes('Todas las reglas') && cleanObsTrans.includes('se cumplen')) {
+                cleanObsTrans = '<span style="color: var(--state-green); font-weight: 600; font-size: 11px;">✓ Cumple reglas</span>';
+            } else if (cleanObsTrans) {
+                cleanObsTrans = `<span style="color: var(--state-coral); font-weight: 500; font-size: 11px;">${cleanObsTrans}</span>`;
+            } else {
+                cleanObsTrans = '<span style="color: var(--text-muted); font-size: 11px;">-</span>';
+            }
+
+            // Observaciones Específicas
+            let cleanObsCheck = reg.obs_check || '';
+            if (cleanObsCheck.includes('Cumple todos los criterios')) {
+                cleanObsCheck = '<span style="color: var(--state-green); font-weight: 600; font-size: 11px;">✓ Cumple criterios</span>';
+            } else if (cleanObsCheck) {
+                cleanObsCheck = `<span style="color: var(--state-amber); font-weight: 500; font-size: 11px;">${cleanObsCheck}</span>`;
+            } else {
+                cleanObsCheck = '<span style="color: var(--text-muted); font-size: 11px;">-</span>';
+            }
+
             return `
                 <tr>
                     <td style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--brand-blue);">${reg.cod_informe}</td>
@@ -892,6 +916,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     <td>${reg.cadena_productiva || 'No Esp.'}</td>
                     <td><div class="table-service-cell" title="${reg.tipo_serv_accion}">${reg.tipo_serv_accion}</div></td>
                     <td>${reg.region}</td>
+                    <td>
+                        <div class="table-obs-cell" title="${reg.obs_trans}" style="max-width: 220px; max-height: 60px; overflow-y: auto; font-size: 11px; line-height: 1.3;">
+                            ${cleanObsTrans}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-obs-cell" title="${reg.obs_check}" style="max-width: 280px; max-height: 60px; overflow-y: auto; font-size: 11px; line-height: 1.3;">
+                            ${cleanObsCheck}
+                        </div>
+                    </td>
                     <td class="text-center">
                         <span class="badge-estado ${badgeClass}">${reg.estado}</span>
                     </td>
