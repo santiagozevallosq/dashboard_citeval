@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let chartPreval = null;
     let chartChecklist = null;
     let chartCite = null;
-    let chartRegion = null;
     let chartCadena = null;
     let chartServicio = null;
 
@@ -237,7 +236,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const filterFechaFin = document.getElementById('filter-fecha-fin');
     const filterCite = document.getElementById('filter-cite');
     const filterEstado = document.getElementById('filter-estado');
-    const filterRegion = document.getElementById('filter-region');
     const filterCadena = document.getElementById('filter-cadena');
     const filterTipoServicio = document.getElementById('filter-tipo-servicio');
     const btnLimpiarFiltros = document.getElementById('btn-limpiar-filters') || document.getElementById('btn-limpiar-filtros');
@@ -255,15 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
             opt.value = cite;
             opt.innerText = cite;
             filterCite.appendChild(opt);
-        });
-
-        // Obtener Regiones únicas
-        const regiones = [...new Set(dashboardData.informes.map(inf => inf.region))].sort();
-        regiones.forEach(reg => {
-            const opt = document.createElement('option');
-            opt.value = reg;
-            opt.innerText = reg;
-            filterRegion.appendChild(opt);
         });
 
         // Obtener Cadenas únicas
@@ -307,7 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateEndStr = filterFechaFin.value;
         const citeSelect = filterCite.value;
         const estadoSelect = filterEstado.value;
-        const regionSelect = filterRegion.value;
         const cadenaSelect = filterCadena.value;
         const servicioSelect = filterTipoServicio.value;
 
@@ -344,11 +332,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Filtros de combos robustos (inmunes a casing, espacios y acentos)
             const matchCite = (citeSelect === 'Todos' || (reg.cite_ut && String(reg.cite_ut).toUpperCase().trim() === citeSelect.toUpperCase().trim()));
             const matchEstado = (estadoSelect === 'Todos' || (reg.estado && String(reg.estado).toUpperCase().trim() === estadoSelect.toUpperCase().trim()));
-            const matchRegion = (regionSelect === 'Todos' || (reg.region && String(reg.region).toUpperCase().trim() === regionSelect.toUpperCase().trim()));
             const matchCadena = (cadenaSelect === 'Todos' || (reg.cadena_productiva && String(reg.cadena_productiva).toUpperCase().trim() === cadenaSelect.toUpperCase().trim()));
             const matchServicio = (servicioSelect === 'Todos' || (reg.tipo_serv_accion && String(reg.tipo_serv_accion).toUpperCase().trim() === servicioSelect.toUpperCase().trim()));
 
-            return matchTexto && matchFecha && matchCite && matchEstado && matchRegion && matchCadena && matchServicio;
+            return matchTexto && matchFecha && matchCite && matchEstado && matchCadena && matchServicio;
         });
 
         // Filtrar también los informes para mantener la consistencia con el gráfico de checklist
@@ -368,7 +355,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filterFechaFin) filterFechaFin.addEventListener('change', aplicarFiltros);
     if (filterCite) filterCite.addEventListener('change', aplicarFiltros);
     if (filterEstado) filterEstado.addEventListener('change', aplicarFiltros);
-    if (filterRegion) filterRegion.addEventListener('change', aplicarFiltros);
     if (filterCadena) filterCadena.addEventListener('change', aplicarFiltros);
     if (filterTipoServicio) filterTipoServicio.addEventListener('change', aplicarFiltros);
     
@@ -379,7 +365,6 @@ document.addEventListener('DOMContentLoaded', () => {
             filterFechaFin.value = '';
             filterCite.value = 'Todos';
             filterEstado.value = 'Todos';
-            filterRegion.value = 'Todos';
             filterCadena.value = 'Todos';
             filterTipoServicio.value = 'Todos';
             aplicarFiltros();
@@ -687,54 +672,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     scales: {
                         x: { stacked: true, ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: '#f1f5f9' } },
                         y: { stacked: true, ticks: { color: '#64748b', font: { size: 9, weight: '700' }, autoSkip: false }, grid: { display: false } }
-                    }
-                }
-            });
-        }
-
-        // --- 3.2 VALIDACIÓN POR REGIÓN ---
-        const regionMap = {};
-        filteredRegistros.forEach(reg => {
-            if (!regionMap[reg.region]) {
-                regionMap[reg.region] = { CONFORME: 0, OBSERVADO: 0, 'FALTA INFORMACIÓN': 0, total: 0 };
-            }
-            regionMap[reg.region][reg.estado]++;
-            regionMap[reg.region].total++;
-        });
-
-        const topRegiones = Object.keys(regionMap)
-            .map(key => ({ region: key, ...regionMap[key] }))
-            .sort((a, b) => b.total - a.total)
-            .slice(0, 10);
-
-        const regionData = {};
-        topRegiones.forEach(item => {
-            let label = item.region;
-            if (label.length > 15) label = label.substring(0, 12) + "...";
-            regionData[label] = item;
-        });
-
-        const regionStack = obtenerDatasetApilado(regionData);
-        const canvasRegion = document.getElementById('chart-region-validation');
-        if (canvasRegion) {
-            const ctxRegion = canvasRegion.getContext('2d');
-            if (chartRegion) chartRegion.destroy();
-            chartRegion = new Chart(ctxRegion, {
-                type: 'bar',
-                data: regionStack,
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                            labels: { boxWidth: 8, font: { size: 9, weight: '600' }, color: '#64748b', padding: 6 }
-                        }
-                    },
-                    scales: {
-                        x: { stacked: true, ticks: { color: '#64748b', font: { size: 10, weight: '600' } }, grid: { display: false } },
-                        y: { stacked: true, ticks: { color: '#64748b', font: { size: 10 } }, grid: { color: '#f1f5f9' } }
                     }
                 }
             });
