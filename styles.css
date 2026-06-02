@@ -2051,9 +2051,4 @@ body {
     font-weight: 600;
 }
 
-/* Fila interactiva para Drawer */
-.clickable-row {
-    cursor: pointer !important;
-}
-
 

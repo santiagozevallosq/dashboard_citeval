@@ -948,7 +948,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             return `
-                <tr class="clickable-row" data-cod="${reg.cod_informe}">
+                <tr>
                     <td style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--brand-blue);">${reg.cod_informe}</td>
                     <td><div class="table-cite-cell" title="${reg.cite_ut}">${reg.cite_ut}</div></td>
                     <td>
@@ -976,15 +976,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>
             `;
         }).join('');
-
-        // Habilitar interactividad del Drawer en las filas de la tabla
-        const filas = inboxBody.querySelectorAll('.clickable-row');
-        filas.forEach(fila => {
-            fila.addEventListener('click', () => {
-                const cod = fila.getAttribute('data-cod');
-                abrirDrawerAuditoria(cod);
-            });
-        });
     };
 
     // -------------------------------------------------------------
