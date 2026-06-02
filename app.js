@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let chartCite = null;
     let chartCadena = null;
     let chartServicio = null;
+    let chartTransversales = null;
 
     // -------------------------------------------------------------
     // INICIALIZACIÓN DE RELOJ Y GENERALES
@@ -400,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderizarKPIs();
         renderizarGraficoPrevalidacion();
+        renderizarGraficoTransversales();
         renderizarGraficoChecklist();
         renderizarGraficosSegmentacion();
         renderizarInbox();
@@ -560,6 +562,102 @@ document.addEventListener('DOMContentLoaded', () => {
                     x: {
                         beginAtZero: true,
                         ticks: { color: '#64748b' },
+                        grid: { color: '#f1f5f9' }
+                    },
+                    y: {
+                        ticks: { color: '#64748b', font: { size: 10, weight: '500' } },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    };
+
+    const renderizarGraficoTransversales = () => {
+        let erroresConteo = {};
+        
+        filteredRegistros.forEach(reg => {
+            let obs = reg.obs_trans || '';
+            if (obs && obs !== 'Todas las reglas lógicas se cumplen.') {
+                erroresConteo[obs] = (erroresConteo[obs] || 0) + 1;
+            }
+        });
+        
+        let erroresSorted = Object.keys(erroresConteo).map(key => {
+            return { error: key, cantidad: erroresConteo[key] };
+        }).sort((a, b) => b.cantidad - a.cantidad);
+        
+        // Mapeo robusto de etiquetas concisas para evitar recortes en la interfaz
+        const labels = erroresSorted.map(err => {
+            let label = err.error.toLowerCase();
+            if (label.includes('ruc/dni no') || label.includes('no es ruc 20') || label.includes('ruc/dni no válido')) {
+                return 'Estructura de RUC/DNI inválida';
+            }
+            if (label.includes('dni detectado') || label.includes('verificación manual')) {
+                return 'DNI detectado (Control manual)';
+            }
+            return err.error.length > 35 ? err.error.substring(0, 32) + "..." : err.error;
+        });
+        const data = erroresSorted.map(err => err.cantidad);
+        const fullDescriptions = erroresSorted.map(err => err.error); // Guardar descripciones completas para el tooltip
+        
+        const canvas = document.getElementById('chart-transversales-summary');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        
+        if (chartTransversales) {
+            chartTransversales.destroy();
+        }
+        
+        chartTransversales = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels.length > 0 ? labels : ['Sin observaciones'],
+                datasets: [{
+                    label: 'Registros Afectados',
+                    data: data.length > 0 ? data : [0],
+                    backgroundColor: 'rgba(0, 47, 108, 0.85)', // Azul ITP premium suave
+                    borderColor: '#002f6c',
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Barra horizontal!
+                responsive: true,
+                maintainAspectRatio: false,
+                layout: {
+                    padding: {
+                        left: 25, // Aumentado para dar aire a los textos del eje Y
+                        right: 15
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            boxWidth: 10,
+                            font: { size: 10, weight: '600' },
+                            color: '#64748b',
+                            padding: 8
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let index = context.dataIndex;
+                                let rawLabel = fullDescriptions[index];
+                                let value = context.dataset.data[index];
+                                return ` Afectados: ${value} (${rawLabel})`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#64748b', stepSize: 1 },
                         grid: { color: '#f1f5f9' }
                     },
                     y: {
@@ -850,7 +948,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             return `
-                <tr>
+                <tr class="clickable-row" data-cod="${reg.cod_informe}">
                     <td style="font-family: var(--font-mono); font-size: 12.5px; font-weight: 700; color: var(--brand-blue);">${reg.cod_informe}</td>
                     <td><div class="table-cite-cell" title="${reg.cite_ut}">${reg.cite_ut}</div></td>
                     <td>
@@ -878,6 +976,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </tr>
             `;
         }).join('');
+
+        // Habilitar interactividad del Drawer en las filas de la tabla
+        const filas = inboxBody.querySelectorAll('.clickable-row');
+        filas.forEach(fila => {
+            fila.addEventListener('click', () => {
+                const cod = fila.getAttribute('data-cod');
+                abrirDrawerAuditoria(cod);
+            });
+        });
     };
 
     // -------------------------------------------------------------

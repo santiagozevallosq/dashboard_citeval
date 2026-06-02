@@ -367,6 +367,19 @@
                         </div>
                     </div>
 
+                    <!-- Observaciones transversales -->
+                    <div class="glass-panel chart-card">
+                        <div class="card-header">
+                            <h2><i data-lucide="shield-alert"></i> Tipo de observaciones transversales</h2>
+                            <span class="helper-tooltip" title="Reglas transversales de inconsistencia de RUC o DNI falladas con mayor frecuencia.">
+                                <i data-lucide="info"></i>
+                            </span>
+                        </div>
+                        <div class="chart-canvas-container">
+                            <canvas id="chart-transversales-summary"></canvas>
+                        </div>
+                    </div>
+
                     <!-- Tipo de observaciones específicas a cada servicio -->
                     <div class="glass-panel chart-card">
                         <div class="card-header">
@@ -389,6 +402,11 @@
                             <div class="inbox-header-title">
                                 <h2><i data-lucide="inbox"></i> Resultados por servicios</h2>
                                 <p class="inbox-subtitle">Mostrando <span id="filtered-count">0</span> de <span id="total-count">0</span> servicios</p>
+                            </div>
+                            <div class="inbox-header-actions">
+                                <a href="./SSIPRO_evaluacion_final.xlsx" download="SSIPRO_evaluacion_final.xlsx" class="btn btn-primary btn-glow btn-sm" id="btn-download-excel">
+                                    <i data-lucide="download"></i> Descargar Excel Evaluado
+                                </a>
                             </div>
                         </div>
 
